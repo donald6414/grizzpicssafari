@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue?vue&type=style&index=0&scoped=1ed4be4a&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.footer {\n  background-color: #3f230b;\n}\n\n.footer-header h1 {\n  color: #fff;\n}\n\n.footer-content ul {\n  list-style: none;\n  padding: 0;\n}\n.footer-content ul li a {\n  text-decoration: none;\n  color: #fff;\n}\n",
+      "start": 1704747511533,
+      "end": 1704747511533,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue"
+        ],
+        "names": [],
+        "mappings": ";AAkFA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACN,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC3B;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE;EAChB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACb;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE;EACjB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;AACZ;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE,EAAE;EACtB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACrB,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACb",
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"mt-4\">\n    <div class=\"footer\">\n      <div class=\"container py-5\">\n        <div class=\"row\">\n          <div class=\"col-md-3\">\n            <img\n              src=\"../assets/logo/grizzpicsLogo2.jpg\"\n              class=\"w-100 h-auto\"\n              alt=\"Grizzpics Trek & Safari`s\"\n            />\n          </div>\n          <div class=\"col-md-3\">\n            <div class=\"footer-header\">\n              <h1>Quick Links</h1>\n            </div>\n            <div class=\"footer-content\">\n              <ul>\n                <li class=\"pb-3\">\n                  <nuxt-link to=\"/\"> Home </nuxt-link>\n                </li>\n                <li class=\"pb-3\">\n                  <nuxt-link to=\"/tours\"> Our Tours </nuxt-link>\n                </li>\n                <li>\n                  <nuxt-link to=\"/contacts\"> Contacts </nuxt-link>\n                </li>\n              </ul>\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n            <div class=\"footer-header\">\n              <h1>Who we are</h1>\n            </div>\n            <div class=\"footer-content\">\n              <p style=\"color: #fff\">\n                We are a Tours and Travel Company based in Tanzania organizing\n                Safaris, with tours ranging from budget, mid-range and Luxury\n              </p>\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n            <div class=\"footer-header\">\n              <h1>GrizzpicsSafari</h1>\n            </div>\n            <div class=\"footer-content\">\n              <ul>\n                <li>\n                  <a href=\"tel:+255687794694\">\n                    <i class=\"fa fa-phone\" aria-hidden=\"true\"></i\n                    ><span style=\"margin-left: 10px\">+255 687 794 694</span>\n                  </a>\n                </li>\n                <li>\n                  <a href=\"mailto:grizzpicssafaris@gmail.com\">\n                    <i class=\"fa fa-envelope\" aria-hidden=\"true\"></i\n                    ><span style=\"margin-left: 10px\"\n                      >grizzpicssafaris@gmail.com</span\n                    >\n                  </a>\n                </li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"copy-right py-1 bg-dark\">\n      <div class=\"container\">\n        <p class=\"text-center text-light mt-3\">\n          © 2023 Grizzpics Treks & Safari's\n        </p>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style scoped>\n.footer {\n  background-color: #3f230b;\n}\n\n.footer-header h1 {\n  color: #fff;\n}\n\n.footer-content ul {\n  list-style: none;\n  padding: 0;\n}\n.footer-content ul li a {\n  text-decoration: none;\n  color: #fff;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511533,
+      "end": 1704747511533,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511533,
+      "end": 1704747511533,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511533,
+      "end": 1704747511533,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511533,
+      "end": 1704747511533,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511533,
+      "end": 1704747511533,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".footer{background-color:#3f230b}.footer-header h1{color:#fff}.footer-content ul{list-style:none;padding:0}.footer-content ul li a{color:#fff;text-decoration:none}",
+      "start": 1704747511533,
+      "end": 1704747511536,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue",
+        "mappings": "AACA,QACE,wBACF,CAEA,kBACE,UACF,CAEA,mBACE,eAAgB,CAChB,SACF,CACA,wBAEE,UAAW,CADX,oBAEF",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue"
+        ],
+        "sourcesContent": [
+          "\n.footer {\n  background-color: #3f230b;\n}\n\n.footer-header h1 {\n  color: #fff;\n}\n\n.footer-content ul {\n  list-style: none;\n  padding: 0;\n}\n.footer-content ul li a {\n  text-decoration: none;\n  color: #fff;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511536,
+      "end": 1704747511536,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".footer[data-v-1ed4be4a]{background-color:#3f230b}.footer-header h1[data-v-1ed4be4a]{color:#fff}.footer-content ul[data-v-1ed4be4a]{list-style:none;padding:0}.footer-content ul li a[data-v-1ed4be4a]{color:#fff;text-decoration:none}",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue",
+        "mappings": "AAAA,yBAAQ,wBAAwB,CAAC,mCAAkB,UAAU,CAAC,oCAAmB,eAAe,CAAC,SAAS,CAAC,yCAAwB,UAAU,CAAC,oBAAoB",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/FooterComponent.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511537,
+      "end": 1704747511537,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511537,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511538,
+      "end": 1704747511538,
+      "order": "normal"
+    }
+  ]
+}

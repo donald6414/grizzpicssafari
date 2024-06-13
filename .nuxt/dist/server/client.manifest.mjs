@@ -1,0 +1,1 @@
+export { default } from "file:///Users/donaldmwakatoga/Desktop/Projects/tourism/tanzania_by_night_website/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

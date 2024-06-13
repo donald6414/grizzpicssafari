@@ -1,0 +1,1 @@
+import{_ as o,o as s,c as t,p as c,e as a,a as n}from"./entry.TU8TiHSt.js";const r={},p=e=>(c("data-v-717a0936"),e=e(),a(),e),_={class:"text-center"},d=p(()=>n("div",{class:"my-3 spinner-border our-color",role:"status"},null,-1)),i=[d];function l(e,u,h,m,f,S){return s(),t("div",_,i)}const x=o(r,[["render",l],["__scopeId","data-v-717a0936"]]);export{x as S};

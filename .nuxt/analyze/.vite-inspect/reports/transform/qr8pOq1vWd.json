@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tour-package/[package].vue?vue&type=style&index=0&scoped=fec76373&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n/* .package-inner-banner { */\n/* height: 259px; */\n/* height: 25rem; */\n/* } */\n.package-inner-image {\n  position: relative;\n  /* height: 0; */\n  height: 25rem;\n  width: 100%;\n  /* padding-top: 45%; */\n  background-repeat: no-repeat;\n  background-size: cover !important;\n  background-position: 50% !important;\n  /* background-position: center; */\n  /* border-radius: 10px; */\n  /* background-color: #c9c9c9; */\n  background: rgba(0, 0, 0, 0.4);\n  background: linear-gradient(\n    to right,\n    rgb(0, 0, 0) 0%,\n    rgba(0, 0, 0, 0.6) 45%,\n    rgba(0, 0, 0, 0) 80%\n  );\n}\n\n/* .package-inner-image:before {\n  content: \"\";\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 2;\n} */\n\n.tour-title {\n  font-size: 2.375rem;\n  line-height: 2.5rem;\n}\n\n.serif {\n  font-family: \"Gentium Basic\", serif;\n}\n\n.tour-title-card {\n  width: 100%;\n  height: auto;\n  position: absolute;\n  display: block;\n  left: 0;\n  bottom: 0;\n  text-shadow: 1px 1px 5px #000;\n  padding: 3.75rem 1.25rem 0.9375rem;\n  z-index: 3;\n  color: #fff;\n  /* -webkit-print-color-adjust: exact;\n  print-color-adjust: exact; */\n}\n\n@media (min-width: 970px) {\n  .tour-title-card {\n    padding-left: 2.1875rem;\n  }\n}\n\n@media (min-width: 744px) {\n  .tour-title-card {\n    width: 50%;\n    height: auto;\n    bottom: 0.9375rem;\n    padding: 0 1.25rem 0.9375rem 1.5625rem;\n  }\n}\n\n.nav_tabs {\n  background-color: #846644;\n}\n\n.nav_tabs nav-tabs nav-link {\n  font-size: 16px;\n  font-weight: 400;\n  margin: 3rem;\n}\n\n.nav-tabs .nav-link {\n  border-radius: 0;\n  color: #000;\n  font-family: \"Gentium Basic\", serif;\n}\n.nav-link.active {\n  color: #3f230b;\n  border-color: #adadad;\n  background: #adadad;\n  border-radius: 0;\n  font-size: 20px;\n  font-weight: 500;\n}\n\n.card {\n  border-radius: 0;\n}\n\n.title {\n  /* margin-left: -1.25rem;\n  margin-right: -1.25rem; */\n  padding: 0 1.25rem 0.9375rem;\n  border-bottom: 0.0625rem solid #d9d9d9;\n  position: relative;\n}\n\n.title strong {\n  padding-top: 0.25rem;\n  margin-bottom: 0.5rem;\n  font-size: 1.125rem;\n  line-height: 1.5rem;\n}\n.title strong h1 {\n  line-height: 2rem;\n  font-size: 1.75rem;\n  font-weight: 600;\n  letter-spacing: 0.03125rem;\n}\n\n.our-color {\n  color: #3f230b;\n}\n\nul li {\n  list-style: none;\n  font-size: 16px;\n  position: relative;\n  margin-bottom: 5px;\n}\n\nli {\n  list-style: none;\n}\nli,\np {\n  line-height: 1.5 !important;\n  /* font-weight: 300; */\n}\n\nul li.exclude:before,\nul li.include:before {\n  display: inline-block;\n  width: 1.5em;\n  top: 2px;\n  left: -23px;\n  position: absolute;\n}\nul li.include:before {\n  content: \"✓\";\n  color: #3f230b;\n}\n\n.quote_card {\n  position: sticky;\n  top: 12%;\n}\n\n.btn-brown {\n  background: #3f230b;\n  color: #fff;\n}\n.form-control:focus {\n  color: #212529;\n  background-color: #fff;\n  border-color: #3f230b;\n  outline: 0;\n  box-shadow: 0 0 0 0.25rem #846644;\n}\n\n.btn-block {\n  width: 100%;\n}\n",
+      "start": 1704747507703,
+      "end": 1704747507703
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507703,
+      "end": 1704747507703,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507703,
+      "end": 1704747507703,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507703,
+      "end": 1704747507703,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".body{font-family:Gentium Basic,serif}.package-inner-image{background-position:50%!important;background-repeat:no-repeat;background-size:cover!important;background:rgba(0,0,0,.4);background:linear-gradient(90deg,#000 0,rgba(0,0,0,.6) 45%,transparent 80%);height:25rem;position:relative;width:100%}.tour-title{font-size:2.375rem;line-height:2.5rem}.serif{font-family:Gentium Basic,serif}.tour-title-card{bottom:0;color:#fff;display:block;height:auto;left:0;padding:3.75rem 1.25rem .9375rem;position:absolute;text-shadow:1px 1px 5px #000;width:100%;z-index:3}@media (min-width:970px){.tour-title-card{padding-left:2.1875rem}}@media (min-width:744px){.tour-title-card{bottom:.9375rem;height:auto;padding:0 1.25rem .9375rem 1.5625rem;width:50%}}.nav_tabs{background-color:#846644}.nav_tabs nav-tabs nav-link{font-size:16px;font-weight:400;margin:3rem}.nav-tabs .nav-link{border-radius:0;color:#000;font-family:Gentium Basic,serif}.nav-link.active{background:#adadad;border-color:#adadad;border-radius:0;color:#3f230b;font-size:20px;font-weight:500}.card{border-radius:0}.title{border-bottom:.0625rem solid #d9d9d9;padding:0 1.25rem .9375rem;position:relative}.title strong{font-size:1.125rem;line-height:1.5rem;margin-bottom:.5rem;padding-top:.25rem}.title strong h1{font-size:1.75rem;font-weight:600;letter-spacing:.03125rem;line-height:2rem}.our-color{color:#3f230b}ul li{font-size:16px;margin-bottom:5px;position:relative}li,ul li{list-style:none}li,p{line-height:1.5!important}ul li.exclude:before,ul li.include:before{display:inline-block;left:-23px;position:absolute;top:2px;width:1.5em}ul li.include:before{color:#3f230b;content:\"✓\"}.quote_card{position:sticky;top:12%}.btn-brown{background:#3f230b;color:#fff}.form-control:focus{background-color:#fff;border-color:#3f230b;box-shadow:0 0 0 .25rem #846644;color:#212529;outline:0}.btn-block{width:100%}",
+      "start": 1704747507703,
+      "end": 1704747508053,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747508053,
+      "end": 1704747508053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747508053,
+      "end": 1704747508053,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747508054,
+      "end": 1704747508054,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".body[data-v-fec76373]{font-family:Gentium Basic,serif}.package-inner-image[data-v-fec76373]{background-position:50%!important;background-repeat:no-repeat;background-size:cover!important;background:rgba(0,0,0,.4);background:linear-gradient(90deg,#000 0,rgba(0,0,0,.6) 45%,transparent 80%);height:25rem;position:relative;width:100%}.tour-title[data-v-fec76373]{font-size:2.375rem;line-height:2.5rem}.serif[data-v-fec76373]{font-family:Gentium Basic,serif}.tour-title-card[data-v-fec76373]{bottom:0;color:#fff;display:block;height:auto;left:0;padding:3.75rem 1.25rem .9375rem;position:absolute;text-shadow:1px 1px 5px #000;width:100%;z-index:3}@media (min-width:970px){.tour-title-card[data-v-fec76373]{padding-left:2.1875rem}}@media (min-width:744px){.tour-title-card[data-v-fec76373]{bottom:.9375rem;height:auto;padding:0 1.25rem .9375rem 1.5625rem;width:50%}}.nav_tabs[data-v-fec76373]{background-color:#846644}.nav_tabs nav-tabs nav-link[data-v-fec76373]{font-size:16px;font-weight:400;margin:3rem}.nav-tabs .nav-link[data-v-fec76373]{border-radius:0;color:#000;font-family:Gentium Basic,serif}.nav-link.active[data-v-fec76373]{background:#adadad;border-color:#adadad;border-radius:0;color:#3f230b;font-size:20px;font-weight:500}.card[data-v-fec76373]{border-radius:0}.title[data-v-fec76373]{border-bottom:.0625rem solid #d9d9d9;padding:0 1.25rem .9375rem;position:relative}.title strong[data-v-fec76373]{font-size:1.125rem;line-height:1.5rem;margin-bottom:.5rem;padding-top:.25rem}.title strong h1[data-v-fec76373]{font-size:1.75rem;font-weight:600;letter-spacing:.03125rem;line-height:2rem}.our-color[data-v-fec76373]{color:#3f230b}ul li[data-v-fec76373]{font-size:16px;margin-bottom:5px;position:relative}li[data-v-fec76373],ul li[data-v-fec76373]{list-style:none}li[data-v-fec76373],p[data-v-fec76373]{line-height:1.5!important}ul li.exclude[data-v-fec76373]:before,ul li.include[data-v-fec76373]:before{display:inline-block;left:-23px;position:absolute;top:2px;width:1.5em}ul li.include[data-v-fec76373]:before{color:#3f230b;content:\"✓\"}.quote_card[data-v-fec76373]{position:sticky;top:12%}.btn-brown[data-v-fec76373]{background:#3f230b;color:#fff}.form-control[data-v-fec76373]:focus{background-color:#fff;border-color:#3f230b;box-shadow:0 0 0 .25rem #846644;color:#212529;outline:0}.btn-block[data-v-fec76373]{width:100%}",
+      "start": 1704747508063,
+      "end": 1704747508074,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747508074,
+      "end": 1704747508074,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747508075,
+      "end": 1704747508075,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747508075,
+      "end": 1704747508076,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747508076,
+      "end": 1704747508076,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747508076,
+      "end": 1704747508076,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747508076,
+      "end": 1704747508076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747508076,
+      "end": 1704747508076,
+      "order": "normal"
+    }
+  ]
+}

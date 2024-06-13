@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue?vue&type=style&index=0&scoped=1a38310e&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.tour-card {\n  max-width: 450px;\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 2.5rem;\n  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;\n  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  text-decoration: none;\n  color: #000;\n  background-color: #fff !important;\n}\n\n.tour-card .bg-image {\n  background-size: cover;\n  position: relative;\n  width: 100%;\n  height: 250px;\n}\n.card .bg-image {\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n}\n.bg-image {\n  position: relative;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50%;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n.bg-image img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n\n.tour-card .tour_title {\n  width: 100%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  text-align: left;\n  padding: 12px 10px;\n  background: rgba(0, 0, 0, 0.4);\n  background: linear-gradient(\n    180deg,\n    transparent 0,\n    rgba(0, 0, 0, 0.3) 45%,\n    rgba(0, 0, 0, 0.5)\n  );\n  text-shadow: 1px 1px 5px #000;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.625rem;\n  line-height: 1.875rem;\n  margin: 40px 0 0;\n}\n\n.tour-card:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.6);\n  transition-duration: 0.25s;\n}\n\n.trip-route {\n  min-height: 63px;\n}\n.title {\n  height: 30px;\n  width: 80%;\n  background-color: grey;\n}\n.title2 {\n  height: 30px;\n  width: 40%;\n  background-color: grey;\n}\n\n.price {\n  height: 20px;\n  width: 30%;\n  background-color: grey;\n}\n.country {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n\n.start_end {\n  height: 20px;\n  width: 50%;\n  background-color: grey;\n}\n\n.tour_type {\n  height: 20px;\n  width: 45%;\n  background-color: grey;\n}\n\n.destination {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n",
+      "start": 1704747511573,
+      "end": 1704747511573,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue"
+        ],
+        "names": [],
+        "mappings": "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AC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACxB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACT,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACxB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACX,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACxB",
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div>\n    <div class=\"card tour-card\">\n      <div class=\"bg-image hover-overlay ripple ripple-surface-light\">\n        <div class=\"tour_title\">\n          <div class=\"title mb-2\"></div>\n          <div class=\"title2\"></div>\n        </div>\n      </div>\n      <div class=\"card-body position-relative mx-3 px-1\">\n        <p class=\"price\"></p>\n        <p class=\"country\"></p>\n        <p class=\"start_end\"></p>\n        <!-- <p class=\"tour_type\"></p>\n        <p class=\"destination\"></p> -->\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style scoped>\n.tour-card {\n  max-width: 450px;\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 2.5rem;\n  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;\n  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  text-decoration: none;\n  color: #000;\n  background-color: #fff !important;\n}\n\n.tour-card .bg-image {\n  background-size: cover;\n  position: relative;\n  width: 100%;\n  height: 250px;\n}\n.card .bg-image {\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n}\n.bg-image {\n  position: relative;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50%;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n.bg-image img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n\n.tour-card .tour_title {\n  width: 100%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  text-align: left;\n  padding: 12px 10px;\n  background: rgba(0, 0, 0, 0.4);\n  background: linear-gradient(\n    180deg,\n    transparent 0,\n    rgba(0, 0, 0, 0.3) 45%,\n    rgba(0, 0, 0, 0.5)\n  );\n  text-shadow: 1px 1px 5px #000;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.625rem;\n  line-height: 1.875rem;\n  margin: 40px 0 0;\n}\n\n.tour-card:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.6);\n  transition-duration: 0.25s;\n}\n\n.trip-route {\n  min-height: 63px;\n}\n.title {\n  height: 30px;\n  width: 80%;\n  background-color: grey;\n}\n.title2 {\n  height: 30px;\n  width: 40%;\n  background-color: grey;\n}\n\n.price {\n  height: 20px;\n  width: 30%;\n  background-color: grey;\n}\n.country {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n\n.start_end {\n  height: 20px;\n  width: 50%;\n  background-color: grey;\n}\n\n.tour_type {\n  height: 20px;\n  width: 45%;\n  background-color: grey;\n}\n\n.destination {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511573,
+      "end": 1704747511573,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511573,
+      "end": 1704747511573,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511573,
+      "end": 1704747511573,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511573,
+      "end": 1704747511573,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511573,
+      "end": 1704747511574,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".tour-card{background-color:#fff!important;box-shadow:0 2px 3px rgba(0,0,0,.18);color:#000;cursor:pointer;margin-bottom:2.5rem;margin-left:auto;margin-right:auto;max-width:450px;text-decoration:none;transition:box-shadow .2s ease-in-out,transform .3s ease-in-out;-webkit-user-select:none;-moz-user-select:none;user-select:none}.tour-card .bg-image{background-size:cover;height:250px;position:relative;width:100%}.card .bg-image{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.bg-image{background-position:50%;background-repeat:no-repeat;background-size:cover;overflow:hidden;position:relative}.bg-image,.bg-image img{height:100%;-o-object-fit:cover;object-fit:cover;width:100%;z-index:1}.tour-card .tour_title{background:rgba(0,0,0,.4);background:linear-gradient(180deg,transparent,rgba(0,0,0,.3) 45%,rgba(0,0,0,.5));bottom:0;color:#fff;font-size:1.625rem;font-weight:700;left:0;line-height:1.875rem;margin:40px 0 0;padding:12px 10px;position:absolute;right:0;text-align:left;text-shadow:1px 1px 5px #000;width:100%}.tour-card:hover{box-shadow:0 1px 13px rgba(0,0,0,.6);cursor:pointer;transition-duration:.25s}.trip-route{min-height:63px}.title{width:80%}.title,.title2{background-color:grey;height:30px}.title2{width:40%}.price{width:30%}.country,.price{background-color:grey;height:20px}.country{width:40%}.start_end{width:50%}.start_end,.tour_type{background-color:grey;height:20px}.tour_type{width:45%}.destination{background-color:grey;height:20px;width:40%}",
+      "start": 1704747511574,
+      "end": 1704747511582,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue",
+        "mappings": "AACA,WAaE,+BAAiC,CAPjC,oCAAyC,CAMzC,UAAW,CALX,cAAe,CAHf,oBAAqB,CADrB,gBAAiB,CADjB,iBAAkB,CADlB,eAAgB,CAUhB,oBAAqB,CANrB,+DAAmE,CAGnE,wBAAyB,CACzB,qBAAsB,CACtB,gBAIF,CAEA,qBACE,qBAAsB,CAGtB,YAAa,CAFb,iBAAkB,CAClB,UAEF,CACA,gBACE,6BAA+B,CAC/B,8BACF,CACA,UAKE,uBAAwB,CAFxB,2BAA4B,CAC5B,qBAAsB,CAFtB,eAAgB,CADhB,iBAUF,CACA,wBALE,WAAY,CACZ,mBAAoB,CACpB,gBAAiB,CAHjB,UAAW,CAIX,SAQF,CAEA,uBAQE,yBAA8B,CAC9B,gFAKC,CAVD,QAAS,CAYT,UAAW,CAEX,kBAAmB,CADnB,eAAgB,CAdhB,MAAO,CAgBP,oBAAqB,CACrB,eAAgB,CAbhB,iBAAkB,CALlB,iBAAkB,CAGlB,OAAQ,CACR,eAAgB,CAShB,4BAA6B,CAd7B,UAoBF,CAEA,iBAEE,oCAAyC,CADzC,cAAe,CAEf,wBACF,CAEA,YACE,eACF,CACA,OAEE,SAEF,CACA,eAFE,qBAAsB,CAFtB,WAQF,CAJA,QAEE,SAEF,CAEA,OAEE,SAEF,CACA,gBAFE,qBAAsB,CAFtB,WAQF,CAJA,SAEE,SAEF,CAEA,WAEE,SAEF,CAEA,sBAHE,qBAAsB,CAFtB,WASF,CAJA,WAEE,SAEF,CAEA,aAGE,qBAAsB,CAFtB,WAAY,CACZ,SAEF",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue"
+        ],
+        "sourcesContent": [
+          "\n.tour-card {\n  max-width: 450px;\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 2.5rem;\n  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;\n  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  text-decoration: none;\n  color: #000;\n  background-color: #fff !important;\n}\n\n.tour-card .bg-image {\n  background-size: cover;\n  position: relative;\n  width: 100%;\n  height: 250px;\n}\n.card .bg-image {\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n}\n.bg-image {\n  position: relative;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50%;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n.bg-image img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n\n.tour-card .tour_title {\n  width: 100%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  text-align: left;\n  padding: 12px 10px;\n  background: rgba(0, 0, 0, 0.4);\n  background: linear-gradient(\n    180deg,\n    transparent 0,\n    rgba(0, 0, 0, 0.3) 45%,\n    rgba(0, 0, 0, 0.5)\n  );\n  text-shadow: 1px 1px 5px #000;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.625rem;\n  line-height: 1.875rem;\n  margin: 40px 0 0;\n}\n\n.tour-card:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.6);\n  transition-duration: 0.25s;\n}\n\n.trip-route {\n  min-height: 63px;\n}\n.title {\n  height: 30px;\n  width: 80%;\n  background-color: grey;\n}\n.title2 {\n  height: 30px;\n  width: 40%;\n  background-color: grey;\n}\n\n.price {\n  height: 20px;\n  width: 30%;\n  background-color: grey;\n}\n.country {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n\n.start_end {\n  height: 20px;\n  width: 50%;\n  background-color: grey;\n}\n\n.tour_type {\n  height: 20px;\n  width: 45%;\n  background-color: grey;\n}\n\n.destination {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511582,
+      "end": 1704747511582,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511582,
+      "end": 1704747511582,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511582,
+      "end": 1704747511583,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".tour-card[data-v-1a38310e]{background-color:#fff!important;box-shadow:0 2px 3px rgba(0,0,0,.18);color:#000;cursor:pointer;margin-bottom:2.5rem;margin-left:auto;margin-right:auto;max-width:450px;text-decoration:none;transition:box-shadow .2s ease-in-out,transform .3s ease-in-out;-webkit-user-select:none;-moz-user-select:none;user-select:none}.tour-card .bg-image[data-v-1a38310e]{background-size:cover;height:250px;position:relative;width:100%}.card .bg-image[data-v-1a38310e]{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.bg-image[data-v-1a38310e]{background-position:50%;background-repeat:no-repeat;background-size:cover;overflow:hidden;position:relative}.bg-image[data-v-1a38310e],.bg-image img[data-v-1a38310e]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%;z-index:1}.tour-card .tour_title[data-v-1a38310e]{background:rgba(0,0,0,.4);background:linear-gradient(180deg,transparent,rgba(0,0,0,.3) 45%,rgba(0,0,0,.5));bottom:0;color:#fff;font-size:1.625rem;font-weight:700;left:0;line-height:1.875rem;margin:40px 0 0;padding:12px 10px;position:absolute;right:0;text-align:left;text-shadow:1px 1px 5px #000;width:100%}.tour-card[data-v-1a38310e]:hover{box-shadow:0 1px 13px rgba(0,0,0,.6);cursor:pointer;transition-duration:.25s}.trip-route[data-v-1a38310e]{min-height:63px}.title[data-v-1a38310e]{width:80%}.title[data-v-1a38310e],.title2[data-v-1a38310e]{background-color:grey;height:30px}.title2[data-v-1a38310e]{width:40%}.price[data-v-1a38310e]{width:30%}.country[data-v-1a38310e],.price[data-v-1a38310e]{background-color:grey;height:20px}.country[data-v-1a38310e]{width:40%}.start_end[data-v-1a38310e]{width:50%}.start_end[data-v-1a38310e],.tour_type[data-v-1a38310e]{background-color:grey;height:20px}.tour_type[data-v-1a38310e]{width:45%}.destination[data-v-1a38310e]{background-color:grey;height:20px;width:40%}",
+      "start": 1704747511583,
+      "end": 1704747511585,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue",
+        "mappings": "AAAA,4BAAW,+BAA+B,CAAC,oCAAoC,CAAC,UAAU,CAAC,cAAc,CAAC,oBAAoB,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,eAAe,CAAC,oBAAoB,CAAC,+DAA+D,CAAC,wBAAwB,CAAC,qBAAqB,CAAC,gBAAgB,CAAC,sCAAqB,qBAAqB,CAAC,YAAY,CAAC,iBAAiB,CAAC,UAAU,CAAC,iCAAgB,6BAA6B,CAAC,8BAA8B,CAAC,2BAAU,uBAAuB,CAAC,2BAA2B,CAAC,qBAAqB,CAAC,eAAe,CAAC,iBAAiB,CAAC,0DAAwB,WAAW,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU,CAAC,SAAS,CAAC,wCAAuB,yBAAyB,CAAC,gFAAgF,CAAC,QAAQ,CAAC,UAAU,CAAC,kBAAkB,CAAC,eAAe,CAAC,MAAM,CAAC,oBAAoB,CAAC,eAAe,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,OAAO,CAAC,eAAe,CAAC,4BAA4B,CAAC,UAAU,CAAC,kCAAiB,oCAAoC,CAAC,cAAc,CAAC,wBAAwB,CAAC,6BAAY,eAAe,CAAC,wBAAO,SAAS,CAAC,iDAAe,qBAAqB,CAAC,WAAW,CAAC,yBAAQ,SAAS,CAAC,wBAAO,SAAS,CAAC,kDAAgB,qBAAqB,CAAC,WAAW,CAAC,0BAAS,SAAS,CAAC,4BAAW,SAAS,CAAC,wDAAsB,qBAAqB,CAAC,WAAW,CAAC,4BAAW,SAAS,CAAC,8BAAa,qBAAqB,CAAC,WAAW,CAAC,SAAS",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511585,
+      "end": 1704747511585,
+      "order": "normal"
+    }
+  ]
+}

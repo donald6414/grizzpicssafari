@@ -1,0 +1,212 @@
+{
+  "resolvedId": "virtual:nuxt:/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/.nuxt/routes.mjs",
+  "transforms": [
+    {
+      "name": "virtual",
+      "result": "import { default as contactsvauoo6bxr8Meta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue?macro=true\";\nimport { default as indexIUFhoT920GMeta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/index.vue?macro=true\";\nimport { default as _91package_93ApHZEmZi09Meta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tour-package/[package].vue?macro=true\";\nimport { default as toursj9GYPWgWPXMeta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tours.vue?macro=true\";\nexport default [\n  {\n    name: contactsvauoo6bxr8Meta?.name ?? \"contacts\",\n    path: contactsvauoo6bxr8Meta?.path ?? \"/contacts\",\n    meta: contactsvauoo6bxr8Meta || {},\n    alias: contactsvauoo6bxr8Meta?.alias || [],\n    redirect: contactsvauoo6bxr8Meta?.redirect || undefined,\n    component: () => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue\").then(m => m.default || m)\n  },\n  {\n    name: indexIUFhoT920GMeta?.name ?? \"index\",\n    path: indexIUFhoT920GMeta?.path ?? \"/\",\n    meta: indexIUFhoT920GMeta || {},\n    alias: indexIUFhoT920GMeta?.alias || [],\n    redirect: indexIUFhoT920GMeta?.redirect || undefined,\n    component: () => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/index.vue\").then(m => m.default || m)\n  },\n  {\n    name: _91package_93ApHZEmZi09Meta?.name ?? \"tour-package-package\",\n    path: _91package_93ApHZEmZi09Meta?.path ?? \"/tour-package/:package()\",\n    meta: _91package_93ApHZEmZi09Meta || {},\n    alias: _91package_93ApHZEmZi09Meta?.alias || [],\n    redirect: _91package_93ApHZEmZi09Meta?.redirect || undefined,\n    component: () => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tour-package/[package].vue\").then(m => m.default || m)\n  },\n  {\n    name: toursj9GYPWgWPXMeta?.name ?? \"tours\",\n    path: toursj9GYPWgWPXMeta?.path ?? \"/tours\",\n    meta: toursj9GYPWgWPXMeta || {},\n    alias: toursj9GYPWgWPXMeta?.alias || [],\n    redirect: toursj9GYPWgWPXMeta?.redirect || undefined,\n    component: () => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tours.vue\").then(m => m.default || m)\n  }\n]",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507269,
+      "end": 1704747507269,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507269,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507270,
+      "end": 1704747507270,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507271,
+      "end": 1704747507272,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507273,
+      "end": 1704747507273,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747507273,
+      "end": 1704747507273,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507273,
+      "end": 1704747507273,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507273,
+      "end": 1704747507273,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747507273,
+      "end": 1704747507273,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507273,
+      "end": 1704747507273,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { default as contactsvauoo6bxr8Meta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue?macro=true\";\nimport { default as indexIUFhoT920GMeta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/index.vue?macro=true\";\nimport { default as _91package_93ApHZEmZi09Meta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tour-package/[package].vue?macro=true\";\nimport { default as toursj9GYPWgWPXMeta } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tours.vue?macro=true\";\nexport default [\n  {\n    name: contactsvauoo6bxr8Meta?.name ?? \"contacts\",\n    path: contactsvauoo6bxr8Meta?.path ?? \"/contacts\",\n    meta: contactsvauoo6bxr8Meta || {},\n    alias: contactsvauoo6bxr8Meta?.alias || [],\n    redirect: contactsvauoo6bxr8Meta?.redirect || undefined,\n    component: () => __vitePreload(() => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: indexIUFhoT920GMeta?.name ?? \"index\",\n    path: indexIUFhoT920GMeta?.path ?? \"/\",\n    meta: indexIUFhoT920GMeta || {},\n    alias: indexIUFhoT920GMeta?.alias || [],\n    redirect: indexIUFhoT920GMeta?.redirect || undefined,\n    component: () => __vitePreload(() => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/index.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: _91package_93ApHZEmZi09Meta?.name ?? \"tour-package-package\",\n    path: _91package_93ApHZEmZi09Meta?.path ?? \"/tour-package/:package()\",\n    meta: _91package_93ApHZEmZi09Meta || {},\n    alias: _91package_93ApHZEmZi09Meta?.alias || [],\n    redirect: _91package_93ApHZEmZi09Meta?.redirect || undefined,\n    component: () => __vitePreload(() => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tour-package/[package].vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  },\n  {\n    name: toursj9GYPWgWPXMeta?.name ?? \"tours\",\n    path: toursj9GYPWgWPXMeta?.path ?? \"/tours\",\n    meta: toursj9GYPWgWPXMeta || {},\n    alias: toursj9GYPWgWPXMeta?.alias || [],\n    redirect: toursj9GYPWgWPXMeta?.redirect || undefined,\n    component: () => __vitePreload(() => import(\"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tours.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(m => m.default || m)\n  }\n]",
+      "start": 1704747507273,
+      "end": 1704747507274,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507274,
+      "end": 1704747507274,
+      "order": "normal"
+    }
+  ]
+}

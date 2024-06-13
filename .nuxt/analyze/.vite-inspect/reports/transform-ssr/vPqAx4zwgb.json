@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue?vue&type=style&index=0&scoped=299930ba&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.navbar {\n  /* background: rgba(15, 26, 46, 0.938); */\n  background: #3f230b;\n}\n.nav-item {\n  /* font-family: \"Montserrat\", sans-serif; */\n  font-size: 13px;\n}\n\n@media (max-width: 1200px) {\n  /* .navbar.navbar-expand-lg {\n    padding-left: 10px !important;\n    padding-right: 10px !important;\n  } */\n}\n\n/* @media (max-width: 400px) {\n  .navbar-brand img {\n    height: 40px;\n  }\n} */\n.ms-auto {\n  margin-left: auto !important;\n}\n\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n",
+      "start": 1704747511704,
+      "end": 1704747511704,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue"
+        ],
+        "names": [],
+        "mappings": ";AAiIA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACN,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EACzC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AACrB;AACA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACR,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;EAC3C,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACjB;;AAEA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACzB,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;IAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;IAC7B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAChC,EAAE,CAAC;AACL;;AAEA,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EAC3B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,EAAE;IAChB,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACd;AACF,EAAE,CAAC;AACH,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACP,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;AAC9B;;AAEA,CAAC,CAAC,CAAC,CAAC,EAAE;EACJ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;AACrC",
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"body\">\n    <nav\n      class=\"navbar navbar-expand-lg navbar-dark px-0 px-lg-5 px-md-3 px-sm-2 py-1 w-100 fixed-top text-white fw-bold\"\n    >\n      <div class=\"container\">\n        <nuxt-link\n          to=\"/\"\n          class=\"navbar-brand\"\n          title=\"Grizzpics Trek & Safari`s\"\n        >\n          <img\n            src=\"../assets/logo/grizzpicsLogo2.jpg\"\n            height=\"60\"\n            width=\"60\"\n            alt=\"Grizzpics Trek & Safari`s\"\n          />\n        </nuxt-link>\n\n        <button\n          id=\"toggleButton\"\n          class=\"navbar-toggler text-danger collapsed\"\n          type=\"button\"\n          data-mdb-toggle=\"collapse\"\n          data-mdb-target=\"#navbarNav\"\n          aria-controls=\"navbarNav\"\n          aria-expanded=\"false\"\n          aria-label=\"Toggle navigation\"\n          @click=\"mobileView\"\n        >\n          <svg viewBox=\"0 0 448 512\" width=\"20\">\n            <path\n              fill=\"#f93154\"\n              d=\"M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z\"\n            />\n          </svg>\n        </button>\n\n        <div id=\"navbarNav\" class=\"collapse navbar-collapse\">\n          <ul\n            class=\"navbar-nav ms-auto d-flex justify-content-center align-items-center text-center\"\n          >\n            <li class=\"nav-item text-uppercase p-2\" title=\"Home\">\n              <nuxt-link\n                to=\"/\"\n                class=\"nav-link\"\n                :class=\"$route.path == '/' ? 'active' : ''\"\n              >\n                Home\n              </nuxt-link>\n            </li>\n            <!-- <li class=\"nav-item text-uppercase p-2\" title=\"About us\">\n              <nuxt-link\n                to=\"/about\"\n                class=\"nav-link\"\n                :class=\"$route.path == '/about' ? 'active' : ''\"\n              >\n                About us\n              </nuxt-link>\n            </li>\n            <li class=\"nav-item text-uppercase p-2\" title=\"Services\">\n              <nuxt-link\n                to=\"/services\"\n                class=\"nav-link\"\n                :class=\"$route.path == '/services' ? 'active' : ''\"\n              >\n                Services\n              </nuxt-link>\n            </li> -->\n            <li class=\"nav-item text-uppercase p-2\" title=\"Our Tours\">\n              <nuxt-link\n                to=\"/tours\"\n                class=\"nav-link\"\n                :class=\"$route.path == '/tours' ? 'active' : ''\"\n              >\n                Our Tours\n              </nuxt-link>\n            </li>\n            <li class=\"nav-item text-uppercase p-2\" title=\"Contact us\">\n              <nuxt-link\n                to=\"/contacts\"\n                class=\"nav-link\"\n                :class=\"$route.path == '/contacts' ? 'active' : ''\"\n              >\n                Contact us\n              </nuxt-link>\n            </li>\n            <!-- <li class=\"nav-item text-uppercase p-2 d-flex align-items-center\">\n                        <div id=\"google_translate_element\"></div>\n                    </li> -->\n          </ul>\n        </div>\n      </div>\n    </nav>\n  </div>\n</template>\n<script>\nexport default {\n  data() {\n    return {};\n  },\n  watch: {\n    $route() {\n      // This will close the collapse if any part of the route changes\n      // including query, params, hash, name, or path\n      var element = document.getElementById(\"navbarNav\");\n      element.classList.remove(\"show\");\n    },\n  },\n  methods: {\n    mobileView() {\n      let button = document.getElementById(\"toggleButton\").classList.value;\n      let navigation = document.getElementById(\"navbarNav\").classList.value;\n      if (button.includes(\"collapsed\") && !navigation.includes(\"show\")) {\n        document.getElementById(\"navbarNav\").classList.add(\"show\");\n        document.getElementById(\"toggleButton\").classList.remove(\"collapsed\");\n      } else {\n        document.getElementById(\"navbarNav\").classList.remove(\"show\");\n        document.getElementById(\"toggleButton\").classList.add(\"collapsed\");\n      }\n    },\n  },\n  created() {\n    // console.log(this.$route.path);\n  },\n};\n</script>\n\n<style scoped>\n.navbar {\n  /* background: rgba(15, 26, 46, 0.938); */\n  background: #3f230b;\n}\n.nav-item {\n  /* font-family: \"Montserrat\", sans-serif; */\n  font-size: 13px;\n}\n\n@media (max-width: 1200px) {\n  /* .navbar.navbar-expand-lg {\n    padding-left: 10px !important;\n    padding-right: 10px !important;\n  } */\n}\n\n/* @media (max-width: 400px) {\n  .navbar-brand img {\n    height: 40px;\n  }\n} */\n.ms-auto {\n  margin-left: auto !important;\n}\n\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511704,
+      "end": 1704747511704,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511704,
+      "end": 1704747511704,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511704,
+      "end": 1704747511704,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511704,
+      "end": 1704747511704,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511704,
+      "end": 1704747511704,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".navbar{background:#3f230b}.nav-item{font-size:13px}.ms-auto{margin-left:auto!important}.body{font-family:Gentium Basic,serif}",
+      "start": 1704747511704,
+      "end": 1704747511707,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue",
+        "mappings": "AACA,QAEE,kBACF,CACA,UAEE,cACF,CAcA,SACE,0BACF,CAEA,MACE,+BACF",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue"
+        ],
+        "sourcesContent": [
+          "\n.navbar {\n  /* background: rgba(15, 26, 46, 0.938); */\n  background: #3f230b;\n}\n.nav-item {\n  /* font-family: \"Montserrat\", sans-serif; */\n  font-size: 13px;\n}\n\n@media (max-width: 1200px) {\n  /* .navbar.navbar-expand-lg {\n    padding-left: 10px !important;\n    padding-right: 10px !important;\n  } */\n}\n\n/* @media (max-width: 400px) {\n  .navbar-brand img {\n    height: 40px;\n  }\n} */\n.ms-auto {\n  margin-left: auto !important;\n}\n\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".navbar[data-v-299930ba]{background:#3f230b}.nav-item[data-v-299930ba]{font-size:13px}.ms-auto[data-v-299930ba]{margin-left:auto!important}.body[data-v-299930ba]{font-family:Gentium Basic,serif}",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue",
+        "mappings": "AAAA,yBAAQ,kBAAkB,CAAC,2BAAU,cAAc,CAAC,0BAAS,0BAA0B,CAAC,uBAAM,+BAA+B",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/NavigationComponent.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511707,
+      "end": 1704747511707,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511707,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511708,
+      "end": 1704747511708,
+      "order": "normal"
+    }
+  ]
+}

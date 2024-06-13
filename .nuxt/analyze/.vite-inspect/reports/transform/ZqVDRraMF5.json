@@ -1,0 +1,223 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/index.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"body\">\n    <NavigationComponent />\n    <HomeHero />\n    <section class=\"py-5 container\" id=\"popular_package\">\n      <header class=\"section-header mb-5 mt-3\"><h1>Popular Tours</h1></header>\n      <div class=\"row\" v-if=\"loading\">\n        <div class=\"col-lg-4 col-md-6 col-xs-12 px-2\" v-for=\"i in 6\" :key=\"i\">\n          <PackagePreloader />\n        </div>\n      </div>\n      <div class=\"row\" v-else>\n        <div\n          class=\"col-lg-4 col-md-6 col-xs-12 px-2\"\n          v-for=\"tour in popular_packages\"\n          :key=\"tour.id\"\n        >\n          <TourCard :tour_package=\"tour\" />\n        </div>\n      </div>\n    </section>\n    <section>\n      <header class=\"section-header mb-5 mt-3\"><h1>Who we are</h1></header>\n      <AboutSection />\n    </section>\n    <section class=\"mt-4\">\n      <FooterComponent />\n    </section>\n  </div>\n</template>\n\n<script>\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport HomeHero from \"../components/HomeHero.vue\";\nimport TourCard from \"../components/TourCard.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\nimport AboutSection from \"../components/AboutSection.vue\";\nimport PackagePreloader from \"../components/preloaders/PackagePreloader.vue\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\n// const runtimeConfig = useRuntimeConfig();\nexport default {\n  // head: {\n  //   titleTemplate: \"%s - Home - Popular Tours\",\n  //   meta: [\n  //     {\n  //       hid: \"description\",\n  //       name: \"description\",\n  //       content:\n  //         \"The Best Safaris In Tanzania Let Us Take You to a Place You’ve Never Been Before\",\n  //     },\n  //   ],\n  // },\n  components: {\n    NavigationComponent,\n    HomeHero,\n    TourCard,\n    AboutSection,\n    PackagePreloader,\n    FooterComponent,\n  },\n  data: () => ({\n    loading: true,\n    popular_packages: [],\n  }),\n  methods: {\n    get_popular_packages() {\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/\" + \"get_popular_packages\")\n        .then((response) => {\n          this.popular_packages = response.data;\n          this.loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n  },\n  created() {\n    this.get_popular_packages();\n  },\n};\n</script>\n\n<style scoped>\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n.section-header h1 {\n  font-size: 30px;\n  color: #846644;\n  text-align: center;\n  font-weight: 500;\n  position: relative;\n  padding-bottom: 15px;\n}\n\n.section-header h1:before {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 120px;\n  height: 1px;\n  background: #ddd;\n  bottom: 1px;\n  left: calc(50% - 60px);\n}\n\n.section-header h1:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 40px;\n  height: 3px;\n  background: #3f230b;\n  bottom: 0;\n  left: calc(50% - 20px);\n}\n</style>\n",
+      "start": 1704747507348,
+      "end": 1704747507490,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507490,
+      "end": 1704747507490,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport HomeHero from \"../components/HomeHero.vue\";\nimport TourCard from \"../components/TourCard.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\nimport AboutSection from \"../components/AboutSection.vue\";\nimport PackagePreloader from \"../components/preloaders/PackagePreloader.vue\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\n// const runtimeConfig = useRuntimeConfig();\nconst _sfc_main = {\n  // head: {\n  //   titleTemplate: \"%s - Home - Popular Tours\",\n  //   meta: [\n  //     {\n  //       hid: \"description\",\n  //       name: \"description\",\n  //       content:\n  //         \"The Best Safaris In Tanzania Let Us Take You to a Place You’ve Never Been Before\",\n  //     },\n  //   ],\n  // },\n  components: {\n    NavigationComponent,\n    HomeHero,\n    TourCard,\n    AboutSection,\n    PackagePreloader,\n    FooterComponent,\n  },\n  data: () => ({\n    loading: true,\n    popular_packages: [],\n  }),\n  methods: {\n    get_popular_packages() {\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/\" + \"get_popular_packages\")\n        .then((response) => {\n          this.popular_packages = response.data;\n          this.loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n  },\n  created() {\n    this.get_popular_packages();\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-549fd60d\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"body\" }\nconst _hoisted_2 = {\n  class: \"py-5 container\",\n  id: \"popular_package\"\n}\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"header\", { class: \"section-header mb-5 mt-3\" }, [\n  /*#__PURE__*/_createElementVNode(\"h1\", null, \"Popular Tours\")\n], -1))\nconst _hoisted_4 = {\n  key: 0,\n  class: \"row\"\n}\nconst _hoisted_5 = {\n  key: 1,\n  class: \"row\"\n}\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"header\", { class: \"section-header mb-5 mt-3\" }, [\n  /*#__PURE__*/_createElementVNode(\"h1\", null, \"Who we are\")\n], -1))\nconst _hoisted_7 = { class: \"mt-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NavigationComponent = _resolveComponent(\"NavigationComponent\")\n  const _component_HomeHero = _resolveComponent(\"HomeHero\")\n  const _component_PackagePreloader = _resolveComponent(\"PackagePreloader\")\n  const _component_TourCard = _resolveComponent(\"TourCard\")\n  const _component_AboutSection = _resolveComponent(\"AboutSection\")\n  const _component_FooterComponent = _resolveComponent(\"FooterComponent\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_NavigationComponent),\n    _createVNode(_component_HomeHero),\n    _createElementVNode(\"section\", _hoisted_2, [\n      _hoisted_3,\n      (_ctx.loading)\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_4, [\n            (_openBlock(), _createElementBlock(_Fragment, null, _renderList(6, (i) => {\n              return _createElementVNode(\"div\", {\n                class: \"col-lg-4 col-md-6 col-xs-12 px-2\",\n                key: i\n              }, [\n                _createVNode(_component_PackagePreloader)\n              ])\n            }), 64))\n          ]))\n        : (_openBlock(), _createElementBlock(\"div\", _hoisted_5, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.popular_packages, (tour) => {\n              return (_openBlock(), _createElementBlock(\"div\", {\n                class: \"col-lg-4 col-md-6 col-xs-12 px-2\",\n                key: tour.id\n              }, [\n                _createVNode(_component_TourCard, { tour_package: tour }, null, 8, [\"tour_package\"])\n              ]))\n            }), 128))\n          ]))\n    ]),\n    _createElementVNode(\"section\", null, [\n      _hoisted_6,\n      _createVNode(_component_AboutSection)\n    ]),\n    _createElementVNode(\"section\", _hoisted_7, [\n      _createVNode(_component_FooterComponent)\n    ])\n  ]))\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/index.vue?vue&type=style&index=0&scoped=549fd60d&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-549fd60d\"]])",
+      "start": 1704747507490,
+      "end": 1704747507497,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507497,
+      "end": 1704747507497,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507497,
+      "end": 1704747507499,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507499,
+      "end": 1704747507499,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1704747507499,
+      "end": 1704747507500,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507500,
+      "end": 1704747507500,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507500,
+      "end": 1704747507501,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747507501,
+      "end": 1704747507501,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507501,
+      "end": 1704747507501,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747507501,
+      "end": 1704747507501,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507501,
+      "end": 1704747507501,
+      "order": "normal"
+    }
+  ]
+}

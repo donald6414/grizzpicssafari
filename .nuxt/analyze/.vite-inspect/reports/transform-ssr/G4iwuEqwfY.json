@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue?vue&type=style&index=0&scoped=421b2cd1&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.pb-100 {\n  padding-bottom: 100px;\n}\n.pt-100 {\n  padding-top: 100px;\n}\n\n.about-desc {\n  display: inline-block;\n  width: 100%;\n  padding-right: 40px;\n}\n\n.about-sec .sec-title {\n  margin: 0;\n  text-align: left;\n}\n.sec-title {\n  margin: 0 250px 60px;\n  text-align: center;\n}\n\n.sec-title h1 {\n  font-size: 38px;\n  font-weight: bold;\n}\n\n.sec-title h1 span {\n  position: relative;\n  color: #3f230b;\n  /* color: #fab909; */\n}\n\n.sec-title p {\n  margin-bottom: 0;\n  margin-top: 20px;\n}\n\n.about-us-img {\n  position: relative;\n  z-index: 2;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\nimg {\n  vertical-align: middle;\n}\nimg {\n  border: 0;\n}\n\n.about-us-img::before {\n  position: absolute;\n  content: \"\";\n  background: #3f230b;\n  /* background: #fab909; */\n  width: 100%;\n  height: 100%;\n  left: -25px;\n  top: 30px;\n  z-index: -1;\n}\n\n:after,\n:before {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n",
+      "start": 1704747511544,
+      "end": 1704747511544,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div>\n    <div class=\"about-sec pt-100 pb-100\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-md-7\">\n            <div class=\"about-desc\">\n              <div class=\"sec-title\">\n                <h1><span>About </span>Grizzpics Treks & Safari's</h1>\n                <p>\n                  At Grizzpicssafari, we are not just a travel company; we are\n                  your gateway to the untamed beauty of Tanzania. With a passion\n                  for wildlife, photography, and sustainable tourism, we curate\n                  exceptional safari experiences that go beyond expectations.\n                  Our team of experienced guides and conservation enthusiasts is\n                  dedicated to sharing the wonders of Tanzania, from the iconic\n                  Serengeti to the hidden treasures of Ngorongoro Crater.\n                </p>\n                <p>\n                  As avid believers in responsible tourism, we strive to leave a\n                  positive impact on both the environment and local communities.\n                  Our safari adventures are crafted to offer a perfect blend of\n                  luxury and authenticity, ensuring you not only witness the\n                  breathtaking landscapes and wildlife but also contribute to\n                  their conservation.\n                </p>\n                <p>\n                  Whether you're a seasoned photographer, a nature enthusiast,\n                  or a family seeking an unforgettable adventure,\n                  Grizzpicssafari welcomes you to embark on a journey where each\n                  moment is a captured memory and every step leaves a footprint\n                  of sustainability. Join us in exploring the wild heart of\n                  Tanzania, where every safari is a story waiting to be told.\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-5\">\n            <div class=\"about-us-img\">\n              <img\n                class=\"w-100 h-100\"\n                src=\"../assets/images/about1.jpg\"\n                alt=\"About-Grizzpics-Treks-&-Safari's\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style scoped>\n.pb-100 {\n  padding-bottom: 100px;\n}\n.pt-100 {\n  padding-top: 100px;\n}\n\n.about-desc {\n  display: inline-block;\n  width: 100%;\n  padding-right: 40px;\n}\n\n.about-sec .sec-title {\n  margin: 0;\n  text-align: left;\n}\n.sec-title {\n  margin: 0 250px 60px;\n  text-align: center;\n}\n\n.sec-title h1 {\n  font-size: 38px;\n  font-weight: bold;\n}\n\n.sec-title h1 span {\n  position: relative;\n  color: #3f230b;\n  /* color: #fab909; */\n}\n\n.sec-title p {\n  margin-bottom: 0;\n  margin-top: 20px;\n}\n\n.about-us-img {\n  position: relative;\n  z-index: 2;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\nimg {\n  vertical-align: middle;\n}\nimg {\n  border: 0;\n}\n\n.about-us-img::before {\n  position: absolute;\n  content: \"\";\n  background: #3f230b;\n  /* background: #fab909; */\n  width: 100%;\n  height: 100%;\n  left: -25px;\n  top: 30px;\n  z-index: -1;\n}\n\n:after,\n:before {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511544,
+      "end": 1704747511544,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511544,
+      "end": 1704747511544,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511544,
+      "end": 1704747511544,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511544,
+      "end": 1704747511544,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511544,
+      "end": 1704747511544,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".pb-100{padding-bottom:100px}.pt-100{padding-top:100px}.about-desc{display:inline-block;padding-right:40px;width:100%}.about-sec .sec-title{margin:0;text-align:left}.sec-title{margin:0 250px 60px;text-align:center}.sec-title h1{font-size:38px;font-weight:700}.sec-title h1 span{color:#3f230b;position:relative}.sec-title p{margin-bottom:0;margin-top:20px}.about-us-img{position:relative;z-index:2}img{border:0;height:auto;max-width:100%;vertical-align:middle}.about-us-img:before{background:#3f230b;content:\"\";height:100%;left:-25px;position:absolute;top:30px;width:100%;z-index:-1}:after,:before{box-sizing:border-box}",
+      "start": 1704747511544,
+      "end": 1704747511551,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue",
+        "mappings": "AACA,QACE,oBACF,CACA,QACE,iBACF,CAEA,YACE,oBAAqB,CAErB,kBAAmB,CADnB,UAEF,CAEA,sBACE,QAAS,CACT,eACF,CACA,WACE,mBAAoB,CACpB,iBACF,CAEA,cACE,cAAe,CACf,eACF,CAEA,mBAEE,aAAc,CADd,iBAGF,CAEA,aACE,eAAgB,CAChB,eACF,CAEA,cACE,iBAAkB,CAClB,SACF,CAEA,IASE,QAAS,CAPT,WAAY,CADZ,cAAe,CAKf,qBAHF,CASA,qBAGE,kBAAmB,CADnB,UAAW,CAIX,WAAY,CACZ,UAAW,CANX,iBAAkB,CAOlB,QAAS,CAHT,UAAW,CAIX,UACF,CAEA,eAIE,qBACF",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue"
+        ],
+        "sourcesContent": [
+          "\n.pb-100 {\n  padding-bottom: 100px;\n}\n.pt-100 {\n  padding-top: 100px;\n}\n\n.about-desc {\n  display: inline-block;\n  width: 100%;\n  padding-right: 40px;\n}\n\n.about-sec .sec-title {\n  margin: 0;\n  text-align: left;\n}\n.sec-title {\n  margin: 0 250px 60px;\n  text-align: center;\n}\n\n.sec-title h1 {\n  font-size: 38px;\n  font-weight: bold;\n}\n\n.sec-title h1 span {\n  position: relative;\n  color: #3f230b;\n  /* color: #fab909; */\n}\n\n.sec-title p {\n  margin-bottom: 0;\n  margin-top: 20px;\n}\n\n.about-us-img {\n  position: relative;\n  z-index: 2;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\nimg {\n  vertical-align: middle;\n}\nimg {\n  border: 0;\n}\n\n.about-us-img::before {\n  position: absolute;\n  content: \"\";\n  background: #3f230b;\n  /* background: #fab909; */\n  width: 100%;\n  height: 100%;\n  left: -25px;\n  top: 30px;\n  z-index: -1;\n}\n\n:after,\n:before {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511551,
+      "end": 1704747511551,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511551,
+      "end": 1704747511551,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511551,
+      "end": 1704747511551,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".pb-100[data-v-421b2cd1]{padding-bottom:100px}.pt-100[data-v-421b2cd1]{padding-top:100px}.about-desc[data-v-421b2cd1]{display:inline-block;padding-right:40px;width:100%}.about-sec .sec-title[data-v-421b2cd1]{margin:0;text-align:left}.sec-title[data-v-421b2cd1]{margin:0 250px 60px;text-align:center}.sec-title h1[data-v-421b2cd1]{font-size:38px;font-weight:700}.sec-title h1 span[data-v-421b2cd1]{color:#3f230b;position:relative}.sec-title p[data-v-421b2cd1]{margin-bottom:0;margin-top:20px}.about-us-img[data-v-421b2cd1]{position:relative;z-index:2}img[data-v-421b2cd1]{border:0;height:auto;max-width:100%;vertical-align:middle}.about-us-img[data-v-421b2cd1]:before{background:#3f230b;content:\"\";height:100%;left:-25px;position:absolute;top:30px;width:100%;z-index:-1}[data-v-421b2cd1]:after,[data-v-421b2cd1]:before{box-sizing:border-box}",
+      "start": 1704747511551,
+      "end": 1704747511552,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue",
+        "mappings": "AAAA,yBAAQ,oBAAoB,CAAC,yBAAQ,iBAAiB,CAAC,6BAAY,oBAAoB,CAAC,kBAAkB,CAAC,UAAU,CAAC,uCAAsB,QAAQ,CAAC,eAAe,CAAC,4BAAW,mBAAmB,CAAC,iBAAiB,CAAC,+BAAc,cAAc,CAAC,eAAe,CAAC,oCAAmB,aAAa,CAAC,iBAAiB,CAAC,8BAAa,eAAe,CAAC,eAAe,CAAC,+BAAc,iBAAiB,CAAC,SAAS,CAAC,qBAAI,QAAQ,CAAC,WAAW,CAAC,cAAc,CAAC,qBAAqB,CAAC,sCAAqB,kBAAkB,CAAC,UAAU,CAAC,WAAW,CAAC,UAAU,CAAC,iBAAiB,CAAC,QAAQ,CAAC,UAAU,CAAC,UAAU,CAAC,iDAAe,qBAAqB",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511552,
+      "end": 1704747511552,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511552,
+      "end": 1704747511553,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511553,
+      "end": 1704747511553,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511553,
+      "end": 1704747511553,
+      "order": "normal"
+    }
+  ]
+}

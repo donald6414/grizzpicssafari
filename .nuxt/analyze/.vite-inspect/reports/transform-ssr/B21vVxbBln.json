@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue?vue&type=style&index=0&scoped=1be5ef1d&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n.section-header h1 {\n  font-size: 30px;\n  color: #846644;\n  text-align: center;\n  font-weight: 500;\n  position: relative;\n  padding-bottom: 15px;\n}\n\n.section-header h1:before {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 120px;\n  height: 1px;\n  background: #ddd;\n  bottom: 1px;\n  left: calc(50% - 60px);\n}\n\n.section-header h1:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 40px;\n  height: 3px;\n  background: #3f230b;\n  bottom: 0;\n  left: calc(50% - 20px);\n}\n\n.card {\n  border-radius: 0;\n}\n\n.btn-brown {\n  background: #3f230b;\n  color: #fff;\n}\n.form-control:focus {\n  color: #212529;\n  background-color: #fff;\n  border-color: #3f230b;\n  outline: 0;\n  box-shadow: 0 0 0 0.25rem #846644;\n}\n",
+      "start": 1704747511074,
+      "end": 1704747511074,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n  <div class=\"body\">\n    <NavigationComponent />\n    <section class=\"py-5 container\">\n      <header class=\"section-header mb-5 mt-5\"><h1>Contact us</h1></header>\n      <div class=\"card p-4 p-md-5 p-lg-5 mx-auto\">\n        <div class=\"card-body\">\n          <div class=\"form-group\">\n            <label for=\"name\">Name</label>\n            <input\n              type=\"text\"\n              id=\"\"\n              v-model=\"message.name\"\n              class=\"form-control\"\n            />\n            <div\n              v-if=\"errors.name\"\n              v-html=\"errors.name[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"email\">Email</label>\n            <input\n              type=\"email\"\n              id=\"\"\n              v-model=\"message.email\"\n              class=\"form-control\"\n            />\n            <div\n              v-if=\"errors.email\"\n              v-html=\"errors.email[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"phone\">Phone</label>\n            <input\n              type=\"text\"\n              id=\"\"\n              v-model=\"message.phone\"\n              class=\"form-control\"\n            />\n            <div\n              v-if=\"errors.phone\"\n              v-html=\"errors.phone[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"message\">Message</label>\n            <textarea class=\"form-control\" v-model=\"message.message\"></textarea>\n            <div\n              v-if=\"errors.message\"\n              v-html=\"errors.message[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group mt-4\">\n            <button class=\"btn btn-brown\" @click=\"contact_message\">\n              <div class=\"spinner-border\" role=\"status\" v-if=\"loading\"></div>\n              <div v-else>Submit</div>\n            </button>\n          </div>\n        </div>\n      </div>\n    </section>\n    <section class=\"mt-4\">\n      <FooterComponent />\n    </section>\n  </div>\n</template>\n\n<script>\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\nexport default {\n  components: {\n    NavigationComponent,\n    FooterComponent,\n  },\n  data: () => ({\n    loading: false,\n    errors: [],\n    message: {\n      name: \"\",\n      email: \"\",\n      phone: \"\",\n      message: \"\",\n    },\n  }),\n  methods: {\n    contact_message() {\n      this.loading = true;\n      axios\n        .post(\n          \"https://api.grizzpicssafari.com/api/\" + \"contact_message\",\n          this.message,\n          {\n            headers: {\n              \"Access-Control-Allow-Origin\": \"*\",\n              \"Access-Control-Allow-Headers\": \"*\",\n              \"Access-Control-Allow-Credentials\": true,\n            },\n          }\n        )\n        .then((response) => {\n          if (response.data[0] == 200) {\n            swal(\n              \"Thank you!\",\n              \"We have received your message, we will reach out to you soon!\",\n              \"success\"\n            );\n            this.loading = false;\n            this.message.name = \"\";\n            this.message.email = \"\";\n            this.message.phone = \"\";\n            this.message.message = \"\";\n          }\n        })\n        .catch((error) => {\n          this.errors = error.response.data.errors;\n          this.loading = false;\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n  },\n};\n</script>\n\n<style scoped>\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n.section-header h1 {\n  font-size: 30px;\n  color: #846644;\n  text-align: center;\n  font-weight: 500;\n  position: relative;\n  padding-bottom: 15px;\n}\n\n.section-header h1:before {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 120px;\n  height: 1px;\n  background: #ddd;\n  bottom: 1px;\n  left: calc(50% - 60px);\n}\n\n.section-header h1:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 40px;\n  height: 3px;\n  background: #3f230b;\n  bottom: 0;\n  left: calc(50% - 20px);\n}\n\n.card {\n  border-radius: 0;\n}\n\n.btn-brown {\n  background: #3f230b;\n  color: #fff;\n}\n.form-control:focus {\n  color: #212529;\n  background-color: #fff;\n  border-color: #3f230b;\n  outline: 0;\n  box-shadow: 0 0 0 0.25rem #846644;\n}\n</style>\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511074,
+      "end": 1704747511074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511074,
+      "end": 1704747511074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511074,
+      "end": 1704747511074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511074,
+      "end": 1704747511074,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511074,
+      "end": 1704747511074,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".body{font-family:Gentium Basic,serif}.section-header h1{color:#846644;font-size:30px;font-weight:500;padding-bottom:15px;position:relative;text-align:center}.section-header h1:before{background:#ddd;bottom:1px;content:\"\";display:block;height:1px;left:calc(50% - 60px);position:absolute;width:120px}.section-header h1:after{background:#3f230b;bottom:0;content:\"\";display:block;height:3px;left:calc(50% - 20px);position:absolute;width:40px}.card{border-radius:0}.btn-brown{background:#3f230b;color:#fff}.form-control:focus{background-color:#fff;border-color:#3f230b;box-shadow:0 0 0 .25rem #846644;color:#212529;outline:0}",
+      "start": 1704747511074,
+      "end": 1704747511085,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue",
+        "mappings": "AACA,MACE,+BACF,CACA,mBAEE,aAAc,CADd,cAAe,CAGf,eAAgB,CAEhB,mBAAoB,CADpB,iBAAkB,CAFlB,iBAIF,CAEA,0BAME,eAAgB,CAChB,UAAW,CANX,UAAW,CAEX,aAAc,CAEd,UAAW,CAGX,qBAAsB,CANtB,iBAAkB,CAElB,WAKF,CAEA,yBAME,kBAAmB,CACnB,QAAS,CANT,UAAW,CAEX,aAAc,CAEd,UAAW,CAGX,qBAAsB,CANtB,iBAAkB,CAElB,UAKF,CAEA,MACE,eACF,CAEA,WACE,kBAAmB,CACnB,UACF,CACA,oBAEE,qBAAsB,CACtB,oBAAqB,CAErB,+BAAiC,CAJjC,aAAc,CAGd,SAEF",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue"
+        ],
+        "sourcesContent": [
+          "\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n.section-header h1 {\n  font-size: 30px;\n  color: #846644;\n  text-align: center;\n  font-weight: 500;\n  position: relative;\n  padding-bottom: 15px;\n}\n\n.section-header h1:before {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 120px;\n  height: 1px;\n  background: #ddd;\n  bottom: 1px;\n  left: calc(50% - 60px);\n}\n\n.section-header h1:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 40px;\n  height: 3px;\n  background: #3f230b;\n  bottom: 0;\n  left: calc(50% - 20px);\n}\n\n.card {\n  border-radius: 0;\n}\n\n.btn-brown {\n  background: #3f230b;\n  color: #fff;\n}\n.form-control:focus {\n  color: #212529;\n  background-color: #fff;\n  border-color: #3f230b;\n  outline: 0;\n  box-shadow: 0 0 0 0.25rem #846644;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511086,
+      "end": 1704747511086,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511087,
+      "end": 1704747511087,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511087,
+      "end": 1704747511087,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".body[data-v-1be5ef1d]{font-family:Gentium Basic,serif}.section-header h1[data-v-1be5ef1d]{color:#846644;font-size:30px;font-weight:500;padding-bottom:15px;position:relative;text-align:center}.section-header h1[data-v-1be5ef1d]:before{background:#ddd;bottom:1px;content:\"\";display:block;height:1px;left:calc(50% - 60px);position:absolute;width:120px}.section-header h1[data-v-1be5ef1d]:after{background:#3f230b;bottom:0;content:\"\";display:block;height:3px;left:calc(50% - 20px);position:absolute;width:40px}.card[data-v-1be5ef1d]{border-radius:0}.btn-brown[data-v-1be5ef1d]{background:#3f230b;color:#fff}.form-control[data-v-1be5ef1d]:focus{background-color:#fff;border-color:#3f230b;box-shadow:0 0 0 .25rem #846644;color:#212529;outline:0}",
+      "start": 1704747511087,
+      "end": 1704747511089,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue",
+        "mappings": "AAAA,uBAAM,+BAA+B,CAAC,oCAAmB,aAAa,CAAC,cAAc,CAAC,eAAe,CAAC,mBAAmB,CAAC,iBAAiB,CAAC,iBAAiB,CAAC,2CAA0B,eAAe,CAAC,UAAU,CAAC,UAAU,CAAC,aAAa,CAAC,UAAU,CAAC,qBAAqB,CAAC,iBAAiB,CAAC,WAAW,CAAC,0CAAyB,kBAAkB,CAAC,QAAQ,CAAC,UAAU,CAAC,aAAa,CAAC,UAAU,CAAC,qBAAqB,CAAC,iBAAiB,CAAC,UAAU,CAAC,uBAAM,eAAe,CAAC,4BAAW,kBAAkB,CAAC,UAAU,CAAC,qCAAoB,qBAAqB,CAAC,oBAAoB,CAAC,+BAA+B,CAAC,aAAa,CAAC,SAAS",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511090,
+      "end": 1704747511090,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511090,
+      "end": 1704747511090,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511090,
+      "end": 1704747511090,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511091,
+      "end": 1704747511091,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511091,
+      "end": 1704747511091,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511091,
+      "end": 1704747511091,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511091,
+      "end": 1704747511091,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".body[data-v-1be5ef1d]{font-family:Gentium Basic,serif}.section-header h1[data-v-1be5ef1d]{color:#846644;font-size:30px;font-weight:500;padding-bottom:15px;position:relative;text-align:center}.section-header h1[data-v-1be5ef1d]:before{background:#ddd;bottom:1px;content:\\\"\\\";display:block;height:1px;left:calc(50% - 60px);position:absolute;width:120px}.section-header h1[data-v-1be5ef1d]:after{background:#3f230b;bottom:0;content:\\\"\\\";display:block;height:3px;left:calc(50% - 20px);position:absolute;width:40px}.card[data-v-1be5ef1d]{border-radius:0}.btn-brown[data-v-1be5ef1d]{background:#3f230b;color:#fff}.form-control[data-v-1be5ef1d]:focus{background-color:#fff;border-color:#3f230b;box-shadow:0 0 0 .25rem #846644;color:#212529;outline:0}\"",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511092,
+      "end": 1704747511092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511092,
+      "end": 1704747511093,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511093,
+      "end": 1704747511093,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511093,
+      "end": 1704747511093,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511093,
+      "end": 1704747511093,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511093,
+      "end": 1704747511093,
+      "order": "normal"
+    }
+  ]
+}

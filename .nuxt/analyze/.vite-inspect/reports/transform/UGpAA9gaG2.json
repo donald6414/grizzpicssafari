@@ -1,0 +1,214 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/SpinnerComponent.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"text-center\">\n    <div class=\"my-3 spinner-border our-color\" role=\"status\">\n      <!-- <span class=\"visually-hidden\">Loading...</span> -->\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style scoped>\n.our-color {\n  color: #3f230b;\n}\n</style>\n",
+      "start": 1704747507703,
+      "end": 1704747507887,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507887,
+      "end": 1704747507887,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507887,
+      "end": 1704747507887,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507887,
+      "end": 1704747507888,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {};\n\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-717a0936\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"text-center\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", {\n  class: \"my-3 spinner-border our-color\",\n  role: \"status\"\n}, null, -1))\nconst _hoisted_3 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, _hoisted_3))\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/SpinnerComponent.vue?vue&type=style&index=0&scoped=717a0936&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-717a0936\"]])",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507888,
+      "end": 1704747507888,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507888,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507889,
+      "end": 1704747507889,
+      "order": "normal"
+    }
+  ]
+}

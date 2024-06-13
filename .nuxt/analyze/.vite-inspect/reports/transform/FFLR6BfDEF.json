@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/TourCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <!-- <div> -->\n  <div>\n    <nuxt-link :to=\"'tour-package/' + tour.id\" class=\"card tour-card\">\n      <div class=\"bg-image hover-overlay ripple ripple-surface-light\">\n        <img\n          :src=\"'https://api.grizzpicssafari.com/' + tour.image_url\"\n          :alt=\"tour.title\"\n          :title=\"tour.no_of_days + '-' + tour.title\"\n        />\n        <div class=\"tour_title\" data-v-172c6bb3=\"\">\n          <h2>{{ tour.no_of_days }}-{{ tour.title }}</h2>\n        </div>\n      </div>\n      <div class=\"card-body position-relative mx-3 px-1\">\n        <p class=\"price\">\n          <template v-if=\"tour.alternative_price\">\n            <del style=\"margin-right: 10px\">\n              <b>${{ formatPrice(tour.price) }}</b>\n            </del>\n            <b>${{ formatPrice(tour.alternative_price) }}</b>\n            pp (USD)\n          </template>\n          <template v-else>\n            <b>${{ formatPrice(tour.price) }}</b>\n            pp (USD)\n          </template>\n        </p>\n        <!-- <p class=\"card-text mb-0\" data-v-172c6bb3=\"\">\n          <strong data-v-172c6bb3=\"\">6 Days: </strong>\n          <span data-v-172c6bb3=\"\">5 Nights</span>\n        </p> -->\n        <p class=\"card-text my-2 text-capitalize\" data-v-172c6bb3=\"\">\n          <strong data-v-172c6bb3=\"\"> Country: </strong>\n          {{ tour.package_country.name }}\n        </p>\n        <p class=\"card-text my-2 text-capitalize\" data-v-172c6bb3=\"\">\n          <strong data-v-172c6bb3=\"\"> Start &amp; End: </strong>\n          {{ tour.package_getting_there.tour_start.title }} -\n          {{ tour.package_getting_there.tour_end.title }}\n        </p>\n        <p class=\"card-text my-2 text-capitalize\" data-v-172c6bb3=\"\">\n          <strong data-v-172c6bb3=\"\"> Tour Type: </strong>\n          <span v-if=\"tour.tour_group\">Group</span>\n          <span v-else>Private</span>, {{ tour.package_level.title }}\n        </p>\n        <p class=\"card-text trip-route mb-0 text-capitalize\" data-v-172c6bb3=\"\">\n          <strong data-v-172c6bb3=\"\"> Destination: </strong>\n          <span\n            v-for=\"(destination, index) in tour.package_days\"\n            :key=\"destination\"\n            >{{ destination }}\n            <span v-if=\"index < tour.package_days.length - 1\">,</span>\n          </span>\n        </p>\n      </div>\n    </nuxt-link>\n  </div>\n  <!-- </div> -->\n</template>\n\n<script>\n// const runtimeConfig = useRuntimeConfig();\nexport default {\n  props: [\"tour_package\"],\n  data: () => ({\n    tour: {},\n  }),\n  methods: {\n    formatPrice(price) {\n      return new Intl.NumberFormat().format(price);\n    },\n  },\n  created() {\n    this.tour = this.tour_package;\n  },\n};\n</script>\n\n<style scoped>\n.tour-card {\n  max-width: 450px;\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 2.5rem;\n  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;\n  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  text-decoration: none;\n  color: #000;\n  background-color: #fff !important;\n}\n\n.tour-card .bg-image {\n  background-size: cover;\n  position: relative;\n  width: 100%;\n  height: 250px;\n}\n.card .bg-image {\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n}\n.bg-image {\n  position: relative;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50%;\n}\n.bg-image img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n\n.tour-card .tour_title[data-v-172c6bb3] {\n  width: 100%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  text-align: left;\n  /* padding: 12px 10px; */\n  background: rgba(0, 0, 0, 0.4);\n  background: linear-gradient(\n    180deg,\n    transparent 0,\n    rgba(0, 0, 0, 0.3) 45%,\n    rgba(0, 0, 0, 0.5)\n  );\n  /* text-shadow: 1px 1px 5px #000; */\n  color: #fff;\n  /* text-align: center; */\n  /* font-weight: 700; */\n  /* font-size: 19px;\n  line-height: 1.5; */\n  font-size: 1.625rem;\n  line-height: 1.875rem;\n  /* margin: 40px 0 0; */\n}\n\n.tour-card:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.6);\n  transition-duration: 0.25s;\n}\n\n.trip-route {\n  min-height: 63px;\n}\n\n.price {\n  /* padding-top: 0.4375rem; */\n  font-size: 0.875rem;\n  color: #2a7018;\n}\n\n.price b {\n  font-size: 1.375rem;\n  font-weight: 600;\n}\n\n.price {\n  padding: 0.4375rem 0.625rem 0.4375rem 0;\n  display: inline-block;\n}\n\n.price {\n  padding: 0.1875rem 0;\n  clear: both;\n}\n@media (min-width: 1175px) {\n  .price {\n    padding-top: 0.3125rem;\n  }\n}\n\n@media (min-width: 970px) {\n  .price {\n    padding-top: 0.75rem;\n  }\n}\n\n@media (min-width: 744px) {\n  .price {\n    padding-top: 0.5rem;\n  }\n}\n\n/* @media (min-width: 744px) {\n  .price b {\n    font-size: 1.375rem;\n  }\n} */\n\n/* @media (min-width: 500px) and (orientation: landscape) {\n  .price b {\n    font-size: 1.375rem;\n  }\n} */\n/* .price b {\n  font-size: 1.25rem;\n} */\n.price b {\n  padding: 0;\n  margin: 0;\n  display: inline;\n}\n/* @media (min-width: 744px) {\n  .price b {\n    font-size: 1.25rem;\n  }\n} */\n/* .price b {\n  font-size: 1.125rem;\n} */\n\n.tour_title h2 {\n  padding: 4.375rem 1.25rem 1.0625rem;\n  text-shadow: 1px 1px 5px #000;\n  font-family: \"Gentium Basic\", serif;\n  font-weight: 600;\n}\n\n.card-text {\n  font-weight: 400;\n}\n\n.card-text strong {\n  font-weight: 600;\n}\n</style>\n",
+      "start": 1704747507672,
+      "end": 1704747507801,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507801,
+      "end": 1704747507801,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n// const runtimeConfig = useRuntimeConfig();\nconst _sfc_main = {\n  props: [\"tour_package\"],\n  data: () => ({\n    tour: {},\n  }),\n  methods: {\n    formatPrice(price) {\n      return new Intl.NumberFormat().format(price);\n    },\n  },\n  created() {\n    this.tour = this.tour_package;\n  },\n};\n\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-253a226f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"bg-image hover-overlay ripple ripple-surface-light\" }\nconst _hoisted_2 = [\"src\", \"alt\", \"title\"]\nconst _hoisted_3 = {\n  class: \"tour_title\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_4 = { class: \"card-body position-relative mx-3 px-1\" }\nconst _hoisted_5 = { class: \"price\" }\nconst _hoisted_6 = { style: {\"margin-right\":\"10px\"} }\nconst _hoisted_7 = {\n  class: \"card-text my-2 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Country: \", -1))\nconst _hoisted_9 = {\n  class: \"card-text my-2 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Start & End: \", -1))\nconst _hoisted_11 = {\n  class: \"card-text my-2 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_12 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Tour Type: \", -1))\nconst _hoisted_13 = { key: 0 }\nconst _hoisted_14 = { key: 1 }\nconst _hoisted_15 = {\n  class: \"card-text trip-route mb-0 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Destination: \", -1))\nconst _hoisted_17 = { key: 0 }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_nuxt_link, {\n      to: 'tour-package/' + _ctx.tour.id,\n      class: \"card tour-card\"\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createElementVNode(\"img\", {\n            src: 'https://api.grizzpicssafari.com/' + _ctx.tour.image_url,\n            alt: _ctx.tour.title,\n            title: _ctx.tour.no_of_days + '-' + _ctx.tour.title\n          }, null, 8, _hoisted_2),\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"h2\", null, _toDisplayString(_ctx.tour.no_of_days) + \"-\" + _toDisplayString(_ctx.tour.title), 1)\n          ])\n        ]),\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"p\", _hoisted_5, [\n            (_ctx.tour.alternative_price)\n              ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n                  _createElementVNode(\"del\", _hoisted_6, [\n                    _createElementVNode(\"b\", null, \"$\" + _toDisplayString($options.formatPrice(_ctx.tour.price)), 1)\n                  ]),\n                  _createElementVNode(\"b\", null, \"$\" + _toDisplayString($options.formatPrice(_ctx.tour.alternative_price)), 1),\n                  _createTextVNode(\" pp (USD) \")\n                ], 64))\n              : (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n                  _createElementVNode(\"b\", null, \"$\" + _toDisplayString($options.formatPrice(_ctx.tour.price)), 1),\n                  _createTextVNode(\" pp (USD) \")\n                ], 64))\n          ]),\n          _createElementVNode(\"p\", _hoisted_7, [\n            _hoisted_8,\n            _createTextVNode(\" \" + _toDisplayString(_ctx.tour.package_country.name), 1)\n          ]),\n          _createElementVNode(\"p\", _hoisted_9, [\n            _hoisted_10,\n            _createTextVNode(\" \" + _toDisplayString(_ctx.tour.package_getting_there.tour_start.title) + \" - \" + _toDisplayString(_ctx.tour.package_getting_there.tour_end.title), 1)\n          ]),\n          _createElementVNode(\"p\", _hoisted_11, [\n            _hoisted_12,\n            (_ctx.tour.tour_group)\n              ? (_openBlock(), _createElementBlock(\"span\", _hoisted_13, \"Group\"))\n              : (_openBlock(), _createElementBlock(\"span\", _hoisted_14, \"Private\")),\n            _createTextVNode(\", \" + _toDisplayString(_ctx.tour.package_level.title), 1)\n          ]),\n          _createElementVNode(\"p\", _hoisted_15, [\n            _hoisted_16,\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.tour.package_days, (destination, index) => {\n              return (_openBlock(), _createElementBlock(\"span\", { key: destination }, [\n                _createTextVNode(_toDisplayString(destination) + \" \", 1),\n                (index < _ctx.tour.package_days.length - 1)\n                  ? (_openBlock(), _createElementBlock(\"span\", _hoisted_17, \",\"))\n                  : _createCommentVNode(\"\", true)\n              ]))\n            }), 128))\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"to\"])\n  ]))\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/TourCard.vue?vue&type=style&index=0&scoped=253a226f&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-253a226f\"]])",
+      "start": 1704747507801,
+      "end": 1704747507806,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507806,
+      "end": 1704747507806,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507806,
+      "end": 1704747507807,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507807,
+      "end": 1704747507808,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507808,
+      "end": 1704747507809,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/node_modules/nuxt/dist/app/components/nuxt-link\";\n\n// const runtimeConfig = useRuntimeConfig();\nconst _sfc_main = {\n  props: [\"tour_package\"],\n  data: () => ({\n    tour: {},\n  }),\n  methods: {\n    formatPrice(price) {\n      return new Intl.NumberFormat().format(price);\n    },\n  },\n  created() {\n    this.tour = this.tour_package;\n  },\n};\n\nimport { createElementVNode as _createElementVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-253a226f\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"bg-image hover-overlay ripple ripple-surface-light\" }\nconst _hoisted_2 = [\"src\", \"alt\", \"title\"]\nconst _hoisted_3 = {\n  class: \"tour_title\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_4 = { class: \"card-body position-relative mx-3 px-1\" }\nconst _hoisted_5 = { class: \"price\" }\nconst _hoisted_6 = { style: {\"margin-right\":\"10px\"} }\nconst _hoisted_7 = {\n  class: \"card-text my-2 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Country: \", -1))\nconst _hoisted_9 = {\n  class: \"card-text my-2 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Start & End: \", -1))\nconst _hoisted_11 = {\n  class: \"card-text my-2 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_12 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Tour Type: \", -1))\nconst _hoisted_13 = { key: 0 }\nconst _hoisted_14 = { key: 1 }\nconst _hoisted_15 = {\n  class: \"card-text trip-route mb-0 text-capitalize\",\n  \"data-v-172c6bb3\": \"\"\n}\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"strong\", { \"data-v-172c6bb3\": \"\" }, \" Destination: \", -1))\nconst _hoisted_17 = { key: 0 }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", null, [\n    _createVNode(_component_nuxt_link, {\n      to: 'tour-package/' + _ctx.tour.id,\n      class: \"card tour-card\"\n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createElementVNode(\"img\", {\n            src: 'https://api.grizzpicssafari.com/' + _ctx.tour.image_url,\n            alt: _ctx.tour.title,\n            title: _ctx.tour.no_of_days + '-' + _ctx.tour.title\n          }, null, 8, _hoisted_2),\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"h2\", null, _toDisplayString(_ctx.tour.no_of_days) + \"-\" + _toDisplayString(_ctx.tour.title), 1)\n          ])\n        ]),\n        _createElementVNode(\"div\", _hoisted_4, [\n          _createElementVNode(\"p\", _hoisted_5, [\n            (_ctx.tour.alternative_price)\n              ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, [\n                  _createElementVNode(\"del\", _hoisted_6, [\n                    _createElementVNode(\"b\", null, \"$\" + _toDisplayString($options.formatPrice(_ctx.tour.price)), 1)\n                  ]),\n                  _createElementVNode(\"b\", null, \"$\" + _toDisplayString($options.formatPrice(_ctx.tour.alternative_price)), 1),\n                  _createTextVNode(\" pp (USD) \")\n                ], 64))\n              : (_openBlock(), _createElementBlock(_Fragment, { key: 1 }, [\n                  _createElementVNode(\"b\", null, \"$\" + _toDisplayString($options.formatPrice(_ctx.tour.price)), 1),\n                  _createTextVNode(\" pp (USD) \")\n                ], 64))\n          ]),\n          _createElementVNode(\"p\", _hoisted_7, [\n            _hoisted_8,\n            _createTextVNode(\" \" + _toDisplayString(_ctx.tour.package_country.name), 1)\n          ]),\n          _createElementVNode(\"p\", _hoisted_9, [\n            _hoisted_10,\n            _createTextVNode(\" \" + _toDisplayString(_ctx.tour.package_getting_there.tour_start.title) + \" - \" + _toDisplayString(_ctx.tour.package_getting_there.tour_end.title), 1)\n          ]),\n          _createElementVNode(\"p\", _hoisted_11, [\n            _hoisted_12,\n            (_ctx.tour.tour_group)\n              ? (_openBlock(), _createElementBlock(\"span\", _hoisted_13, \"Group\"))\n              : (_openBlock(), _createElementBlock(\"span\", _hoisted_14, \"Private\")),\n            _createTextVNode(\", \" + _toDisplayString(_ctx.tour.package_level.title), 1)\n          ]),\n          _createElementVNode(\"p\", _hoisted_15, [\n            _hoisted_16,\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(_ctx.tour.package_days, (destination, index) => {\n              return (_openBlock(), _createElementBlock(\"span\", { key: destination }, [\n                _createTextVNode(_toDisplayString(destination) + \" \", 1),\n                (index < _ctx.tour.package_days.length - 1)\n                  ? (_openBlock(), _createElementBlock(\"span\", _hoisted_17, \",\"))\n                  : _createCommentVNode(\"\", true)\n              ]))\n            }), 128))\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"to\"])\n  ]))\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/TourCard.vue?vue&type=style&index=0&scoped=253a226f&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-253a226f\"]])",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507809,
+      "end": 1704747507809,
+      "order": "normal"
+    }
+  ]
+}

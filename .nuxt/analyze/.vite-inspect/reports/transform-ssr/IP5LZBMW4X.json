@@ -1,0 +1,259 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <swiper\n      :style=\"{\n        '--swiper-navigation-color': '#fff',\n        '--swiper-pagination-color': '#fff',\n      }\"\n      :loop=\"true\"\n      :spaceBetween=\"10\"\n      :navigation=\"true\"\n      :thumbs=\"{ swiper: thumbsSwiper }\"\n      :modules=\"modules\"\n      class=\"mySwiper2\"\n    >\n      <swiper-slide v-for=\"image in gallery_images\" :key=\"image.id\">\n        <img :src=\"'https://api.grizzpicssafari.com/' + image.image_url\" />\n      </swiper-slide>\n    </swiper>\n    <swiper\n      @swiper=\"setThumbsSwiper\"\n      :loop=\"true\"\n      :spaceBetween=\"10\"\n      :slidesPerView=\"4\"\n      :freeMode=\"true\"\n      :watchSlidesProgress=\"true\"\n      :modules=\"modules\"\n      class=\"mySwiper\"\n    >\n      <swiper-slide v-for=\"image in gallery_images\" :key=\"image.id\">\n        <img :src=\"'https://api.grizzpicssafari.com/' + image.image_url\" />\n      </swiper-slide>\n    </swiper>\n  </div>\n</template>\n<script>\n// Import Swiper Vue.js components\nimport { Swiper, SwiperSlide } from \"swiper/vue\";\n\n// Import Swiper styles\nimport \"swiper/css\";\n\nimport \"swiper/css/free-mode\";\nimport \"swiper/css/navigation\";\nimport \"swiper/css/thumbs\";\n\n// import \"../assets/css/style.css\";\n\n// import required modules\nimport { FreeMode, Navigation, Thumbs } from \"swiper\";\n\nexport default {\n  props: [\"package_gallery\"],\n  components: {\n    Swiper,\n    SwiperSlide,\n  },\n  setup() {\n    let thumbsSwiper = null;\n\n    const setThumbsSwiper = (swiper) => {\n      thumbsSwiper = swiper;\n    };\n\n    return {\n      modules: [FreeMode, Navigation, Thumbs],\n    };\n  },\n  data: () => ({\n    // thumbsSwiper: null,\n    // setThumbsSwiper: null,\n    gallery_images: [],\n  }),\n  methods: {},\n  created() {\n    this.gallery_images = this.package_gallery;\n    // console.log(this.gallery_images);\n  },\n};\n</script>\n\n<style scoped>\n.swiper {\n  width: 100%;\n  height: 100%;\n}\n\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  background: #fff;\n\n  /* Center slide text vertically */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.swiper {\n  width: 100%;\n  height: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.swiper-slide {\n  background-size: cover;\n  background-position: center;\n}\n\n.mySwiper2 {\n  /* height: 80%; */\n  width: 100%;\n}\n\n.mySwiper {\n  height: 20%;\n  box-sizing: border-box;\n  padding: 10px 0;\n}\n\n.mySwiper .swiper-slide {\n  width: 25%;\n  height: 100%;\n  opacity: 0.4;\n}\n\n.mySwiper .swiper-slide-thumb-active {\n  opacity: 1;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n</style>\n",
+      "start": 1704747511661,
+      "end": 1704747511716,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511716,
+      "end": 1704747511716,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n// Import Swiper Vue.js components\nimport { Swiper, SwiperSlide } from \"swiper/vue\";\n\n// Import Swiper styles\nimport \"swiper/css\";\n\nimport \"swiper/css/free-mode\";\nimport \"swiper/css/navigation\";\nimport \"swiper/css/thumbs\";\n\n// import \"../assets/css/style.css\";\n\n// import required modules\nimport { FreeMode, Navigation, Thumbs } from \"swiper\";\n\nconst _sfc_main = {\n  props: [\"package_gallery\"],\n  components: {\n    Swiper,\n    SwiperSlide,\n  },\n  setup() {\n    let thumbsSwiper = null;\n\n    const setThumbsSwiper = (swiper) => {\n      thumbsSwiper = swiper;\n    };\n\n    return {\n      modules: [FreeMode, Navigation, Thumbs],\n    };\n  },\n  data: () => ({\n    // thumbsSwiper: null,\n    // setThumbsSwiper: null,\n    gallery_images: [],\n  }),\n  methods: {},\n  created() {\n    this.gallery_images = this.package_gallery;\n    // console.log(this.gallery_images);\n  },\n};\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrRenderList as _ssrRenderList } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_swiper = _resolveComponent(\"swiper\")\n  const _component_swiper_slide = _resolveComponent(\"swiper-slide\")\n\n  _push(`<div${_ssrRenderAttrs(_attrs)} data-v-8bc5e900>`)\n  _push(_ssrRenderComponent(_component_swiper, {\n    style: {\n        '--swiper-navigation-color': '#fff',\n        '--swiper-pagination-color': '#fff',\n      },\n    loop: true,\n    spaceBetween: 10,\n    navigation: true,\n    thumbs: { swiper: _ctx.thumbsSwiper },\n    modules: $setup.modules,\n    class: \"mySwiper2\"\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<!--[-->`)\n        _ssrRenderList(_ctx.gallery_images, (image) => {\n          _push(_ssrRenderComponent(_component_swiper_slide, {\n            key: image.id\n          }, {\n            default: _withCtx((_, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(`<img${\n                  _ssrRenderAttr(\"src\", 'https://api.grizzpicssafari.com/' + image.image_url)\n                } data-v-8bc5e900${\n                  _scopeId\n                }>`)\n              } else {\n                return [\n                  _createVNode(\"img\", {\n                    src: 'https://api.grizzpicssafari.com/' + image.image_url\n                  }, null, 8, [\"src\"])\n                ]\n              }\n            }),\n            _: 2\n          }, _parent, _scopeId))\n        })\n        _push(`<!--]-->`)\n      } else {\n        return [\n          (_openBlock(true), _createBlock(_Fragment, null, _renderList(_ctx.gallery_images, (image) => {\n            return (_openBlock(), _createBlock(_component_swiper_slide, {\n              key: image.id\n            }, {\n              default: _withCtx(() => [\n                _createVNode(\"img\", {\n                  src: 'https://api.grizzpicssafari.com/' + image.image_url\n                }, null, 8, [\"src\"])\n              ]),\n              _: 2\n            }, 1024))\n          }), 128))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(_ssrRenderComponent(_component_swiper, {\n    onSwiper: _ctx.setThumbsSwiper,\n    loop: true,\n    spaceBetween: 10,\n    slidesPerView: 4,\n    freeMode: true,\n    watchSlidesProgress: true,\n    modules: $setup.modules,\n    class: \"mySwiper\"\n  }, {\n    default: _withCtx((_, _push, _parent, _scopeId) => {\n      if (_push) {\n        _push(`<!--[-->`)\n        _ssrRenderList(_ctx.gallery_images, (image) => {\n          _push(_ssrRenderComponent(_component_swiper_slide, {\n            key: image.id\n          }, {\n            default: _withCtx((_, _push, _parent, _scopeId) => {\n              if (_push) {\n                _push(`<img${\n                  _ssrRenderAttr(\"src\", 'https://api.grizzpicssafari.com/' + image.image_url)\n                } data-v-8bc5e900${\n                  _scopeId\n                }>`)\n              } else {\n                return [\n                  _createVNode(\"img\", {\n                    src: 'https://api.grizzpicssafari.com/' + image.image_url\n                  }, null, 8, [\"src\"])\n                ]\n              }\n            }),\n            _: 2\n          }, _parent, _scopeId))\n        })\n        _push(`<!--]-->`)\n      } else {\n        return [\n          (_openBlock(true), _createBlock(_Fragment, null, _renderList(_ctx.gallery_images, (image) => {\n            return (_openBlock(), _createBlock(_component_swiper_slide, {\n              key: image.id\n            }, {\n              default: _withCtx(() => [\n                _createVNode(\"img\", {\n                  src: 'https://api.grizzpicssafari.com/' + image.image_url\n                }, null, 8, [\"src\"])\n              ]),\n              _: 2\n            }, 1024))\n          }), 128))\n        ]\n      }\n    }),\n    _: 1\n  }, _parent))\n  _push(`</div>`)\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue?vue&type=style&index=0&scoped=8bc5e900&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/PackageGallery.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-8bc5e900\"]])",
+      "start": 1704747511716,
+      "end": 1704747511721,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div>\n    <swiper\n      :style=\"{\n        '--swiper-navigation-color': '#fff',\n        '--swiper-pagination-color': '#fff',\n      }\"\n      :loop=\"true\"\n      :spaceBetween=\"10\"\n      :navigation=\"true\"\n      :thumbs=\"{ swiper: thumbsSwiper }\"\n      :modules=\"modules\"\n      class=\"mySwiper2\"\n    >\n      <swiper-slide v-for=\"image in gallery_images\" :key=\"image.id\">\n        <img :src=\"'https://api.grizzpicssafari.com/' + image.image_url\" />\n      </swiper-slide>\n    </swiper>\n    <swiper\n      @swiper=\"setThumbsSwiper\"\n      :loop=\"true\"\n      :spaceBetween=\"10\"\n      :slidesPerView=\"4\"\n      :freeMode=\"true\"\n      :watchSlidesProgress=\"true\"\n      :modules=\"modules\"\n      class=\"mySwiper\"\n    >\n      <swiper-slide v-for=\"image in gallery_images\" :key=\"image.id\">\n        <img :src=\"'https://api.grizzpicssafari.com/' + image.image_url\" />\n      </swiper-slide>\n    </swiper>\n  </div>\n</template>\n<script>\n// Import Swiper Vue.js components\nimport { Swiper, SwiperSlide } from \"swiper/vue\";\n\n// Import Swiper styles\nimport \"swiper/css\";\n\nimport \"swiper/css/free-mode\";\nimport \"swiper/css/navigation\";\nimport \"swiper/css/thumbs\";\n\n// import \"../assets/css/style.css\";\n\n// import required modules\nimport { FreeMode, Navigation, Thumbs } from \"swiper\";\n\nexport default {\n  props: [\"package_gallery\"],\n  components: {\n    Swiper,\n    SwiperSlide,\n  },\n  setup() {\n    let thumbsSwiper = null;\n\n    const setThumbsSwiper = (swiper) => {\n      thumbsSwiper = swiper;\n    };\n\n    return {\n      modules: [FreeMode, Navigation, Thumbs],\n    };\n  },\n  data: () => ({\n    // thumbsSwiper: null,\n    // setThumbsSwiper: null,\n    gallery_images: [],\n  }),\n  methods: {},\n  created() {\n    this.gallery_images = this.package_gallery;\n    // console.log(this.gallery_images);\n  },\n};\n</script>\n\n<style scoped>\n.swiper {\n  width: 100%;\n  height: 100%;\n}\n\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  background: #fff;\n\n  /* Center slide text vertically */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.swiper {\n  width: 100%;\n  height: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.swiper-slide {\n  background-size: cover;\n  background-position: center;\n}\n\n.mySwiper2 {\n  /* height: 80%; */\n  width: 100%;\n}\n\n.mySwiper {\n  height: 20%;\n  box-sizing: border-box;\n  padding: 10px 0;\n}\n\n.mySwiper .swiper-slide {\n  width: 25%;\n  height: 100%;\n  opacity: 0.4;\n}\n\n.mySwiper .swiper-slide-thumb-active {\n  opacity: 1;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n</style>\n"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511721,
+      "end": 1704747511721,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511721,
+      "end": 1704747511722,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511721,
+      "end": 1704747511722,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511722,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511722,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511723,
+      "end": 1704747511723,
+      "order": "normal"
+    }
+  ]
+}

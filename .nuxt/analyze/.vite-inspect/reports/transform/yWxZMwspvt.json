@@ -1,0 +1,210 @@
+{
+  "resolvedId": "virtual:nuxt:/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/.nuxt/nuxt.config.mjs",
+  "transforms": [
+    {
+      "name": "virtual",
+      "result": "export const appHead = {\"meta\":[{\"charset\":\"utf-8\"},{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"},{\"name\":\"google-site-verification\",\"content\":\"4QMPivL3eEzG9uzRNjQOibiwUpaJXmxoNLdDhOo6FDA\"},{\"hid\":\"description\",\"name\":\"description\",\"content\":\"Embark on unforgettable Tanzanian adventures with Grizzpicssafari. Discover the beauty of wildlife through expert-guided safari tours, from exclusive photography expeditions to budget-friendly family safaris. Explore Tanzania's hidden gems, including the Serengeti and Ngorongoro Crater, with our tailor-made itineraries. Immerse yourself in sustainable and authentic experiences, from cultural encounters to wilderness camping. Choose Grizzpicssafari for personalized, eco-friendly, and extraordinary journeys through the heart of Africa.\"},{\"property\":\"og:image\",\"content\":\"https://www.grizzpicssafari.com/assests/grizzpicsLogo2.jpg\"},{\"property\":\"og:site_name\",\"content\":\"Grizzpicssafari\"},{\"property\":\"og:type\",\"content\":\"website\"},{\"property\":\"og:url\",\"content\":\"https://grizzpicssafari.com/\"},{\"property\":\"og:title\",\"content\":\"Grizzpicssafari | The Best Safaris In Tanzania\"},{\"name\":\"keywords\",\"content\":\"Safari, Tanzania Safari, Serengeti, Ngorongoro, Manyara, Tarangire, Kilimanjaro, Meru, Best Tanzania Safari, Best Safari, Serengeri Ngorongoro Tarangire Lake Manyara,safari tours in Tanzania, wildlife photography excursions, off-the-beaten-path safaris, budget-friendly safari packages, custom safari itineraries, guided wildlife adventures, unique Tanzanian safaris, private game drives, birdwatching safaris, wilderness camping experiences, cultural safari tours, hidden gems of Tanzania, exclusive safari photography, eco-friendly wildlife tours, tailor-made Tanzania safaris, group safari expeditions, family-friendly wildlife holidays, Tanzania safari specialists, luxury safari accommodations, sustainable tourism in Tanzania, authentic Maasai village visits, Serengeti migration experiences, Ngorongoro Crater exploration, Tarangire National Park safaris, Selous Game Reserve adventures, Kilimanjaro trekking and safaris, Tanzanian coastal wildlife tours, Tanzania safari and beach vacations,wildlife safaris Selous Game Reserve, chimpanzee trekking Gombe Stream, luxury mobile camping Tanzania, cultural tours Maasai villages, hot air balloon Serengeti, boat safaris Lake Manyara, affordable wildlife viewing Tanzania, camping safaris solo travelers, family photography tours Ngorongoro Crater, honeymoon safari packages Tanzania, green season birdwatching Tanzania, Swahili immersion courses dry season, best time wildebeest migration safari Tanzania, safaris dietary restrictions.\"}],\"link\":[{\"rel\":\"stylesheet\",\"href\":\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\"},{\"rel\":\"stylesheet\",\"href\":\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\"},{\"rel\":\"stylesheet\",\"href\":\"https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css\"}],\"style\":[],\"script\":[{\"src\":\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js\"}],\"noscript\":[],\"title\":\"Grizzpicssafari | The Best Safaris In Tanzania\",\"htmlAttrs\":{\"lang\":\"en\"}}\n\nexport const appBaseURL = \"/\"\n\nexport const appBuildAssetsDir = \"/_nuxt/\"\n\nexport const appCdnURL = \"\"\n\nexport const appLayoutTransition = false\n\nexport const appPageTransition = false\n\nexport const appKeepalive = false\n\nexport const appRootId = \"__nuxt\"\n\nexport const appRootTag = \"div\"\n\nexport const renderJsonPayloads = true\n\nexport const componentIslands = false\n\nexport const payloadExtraction = true\n\nexport const appManifest = true\n\nexport const remoteComponentIslands = false\n\nexport const selectiveClient = false\n\nexport const devPagesDir = null\n\nexport const devRootDir = null\n\nexport const nuxtLinkDefaults = {\"componentName\":\"NuxtLink\"}\n\nexport const asyncDataDefaults = {\"deep\":true}\n\nexport const fetchDefaults = {}\n\nexport const vueAppRootContainer = '#__nuxt'",
+      "start": 1704747507075,
+      "end": 1704747507075,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507075,
+      "end": 1704747507075,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507075,
+      "end": 1704747507075,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507075,
+      "end": 1704747507075,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507075,
+      "end": 1704747507075,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507076,
+      "end": 1704747507076,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507077,
+      "end": 1704747507077,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507078,
+      "end": 1704747507078,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507078,
+      "end": 1704747507078,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507078,
+      "end": 1704747507078,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507078,
+      "end": 1704747507078,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507084,
+      "end": 1704747507092,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507092,
+      "end": 1704747507092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747507092,
+      "end": 1704747507092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507092,
+      "end": 1704747507092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507092,
+      "end": 1704747507092,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747507093,
+      "end": 1704747507093,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507093,
+      "end": 1704747507093,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747507093,
+      "end": 1704747507095,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507095,
+      "end": 1704747507095,
+      "order": "normal"
+    }
+  ]
+}

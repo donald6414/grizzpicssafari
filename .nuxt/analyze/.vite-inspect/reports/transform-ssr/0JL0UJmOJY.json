@@ -1,0 +1,259 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div>\n    <div class=\"about-sec pt-100 pb-100\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-md-7\">\n            <div class=\"about-desc\">\n              <div class=\"sec-title\">\n                <h1><span>About </span>Grizzpics Treks & Safari's</h1>\n                <p>\n                  At Grizzpicssafari, we are not just a travel company; we are\n                  your gateway to the untamed beauty of Tanzania. With a passion\n                  for wildlife, photography, and sustainable tourism, we curate\n                  exceptional safari experiences that go beyond expectations.\n                  Our team of experienced guides and conservation enthusiasts is\n                  dedicated to sharing the wonders of Tanzania, from the iconic\n                  Serengeti to the hidden treasures of Ngorongoro Crater.\n                </p>\n                <p>\n                  As avid believers in responsible tourism, we strive to leave a\n                  positive impact on both the environment and local communities.\n                  Our safari adventures are crafted to offer a perfect blend of\n                  luxury and authenticity, ensuring you not only witness the\n                  breathtaking landscapes and wildlife but also contribute to\n                  their conservation.\n                </p>\n                <p>\n                  Whether you're a seasoned photographer, a nature enthusiast,\n                  or a family seeking an unforgettable adventure,\n                  Grizzpicssafari welcomes you to embark on a journey where each\n                  moment is a captured memory and every step leaves a footprint\n                  of sustainability. Join us in exploring the wild heart of\n                  Tanzania, where every safari is a story waiting to be told.\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-5\">\n            <div class=\"about-us-img\">\n              <img\n                class=\"w-100 h-100\"\n                src=\"../assets/images/about1.jpg\"\n                alt=\"About-Grizzpics-Treks-&-Safari's\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style scoped>\n.pb-100 {\n  padding-bottom: 100px;\n}\n.pt-100 {\n  padding-top: 100px;\n}\n\n.about-desc {\n  display: inline-block;\n  width: 100%;\n  padding-right: 40px;\n}\n\n.about-sec .sec-title {\n  margin: 0;\n  text-align: left;\n}\n.sec-title {\n  margin: 0 250px 60px;\n  text-align: center;\n}\n\n.sec-title h1 {\n  font-size: 38px;\n  font-weight: bold;\n}\n\n.sec-title h1 span {\n  position: relative;\n  color: #3f230b;\n  /* color: #fab909; */\n}\n\n.sec-title p {\n  margin-bottom: 0;\n  margin-top: 20px;\n}\n\n.about-us-img {\n  position: relative;\n  z-index: 2;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\nimg {\n  vertical-align: middle;\n}\nimg {\n  border: 0;\n}\n\n.about-us-img::before {\n  position: absolute;\n  content: \"\";\n  background: #3f230b;\n  /* background: #fab909; */\n  width: 100%;\n  height: 100%;\n  left: -25px;\n  top: 30px;\n  z-index: -1;\n}\n\n:after,\n:before {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n</style>\n",
+      "start": 1704747511313,
+      "end": 1704747511501,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511501,
+      "end": 1704747511501,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511502,
+      "end": 1704747511502,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511502,
+      "end": 1704747511502,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {};\n\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from '../assets/images/about1.jpg'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<div${\n    _ssrRenderAttrs(_attrs)\n  } data-v-421b2cd1><div class=\"about-sec pt-100 pb-100\" data-v-421b2cd1><div class=\"container\" data-v-421b2cd1><div class=\"row\" data-v-421b2cd1><div class=\"col-md-7\" data-v-421b2cd1><div class=\"about-desc\" data-v-421b2cd1><div class=\"sec-title\" data-v-421b2cd1><h1 data-v-421b2cd1><span data-v-421b2cd1>About </span>Grizzpics Treks &amp; Safari&#39;s</h1><p data-v-421b2cd1> At Grizzpicssafari, we are not just a travel company; we are your gateway to the untamed beauty of Tanzania. With a passion for wildlife, photography, and sustainable tourism, we curate exceptional safari experiences that go beyond expectations. Our team of experienced guides and conservation enthusiasts is dedicated to sharing the wonders of Tanzania, from the iconic Serengeti to the hidden treasures of Ngorongoro Crater. </p><p data-v-421b2cd1> As avid believers in responsible tourism, we strive to leave a positive impact on both the environment and local communities. Our safari adventures are crafted to offer a perfect blend of luxury and authenticity, ensuring you not only witness the breathtaking landscapes and wildlife but also contribute to their conservation. </p><p data-v-421b2cd1> Whether you&#39;re a seasoned photographer, a nature enthusiast, or a family seeking an unforgettable adventure, Grizzpicssafari welcomes you to embark on a journey where each moment is a captured memory and every step leaves a footprint of sustainability. Join us in exploring the wild heart of Tanzania, where every safari is a story waiting to be told. </p></div></div></div><div class=\"col-md-5\" data-v-421b2cd1><div class=\"about-us-img\" data-v-421b2cd1><img class=\"w-100 h-100\"${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt=\"About-Grizzpics-Treks-&amp;-Safari&#39;s\" data-v-421b2cd1></div></div></div></div></div></div>`)\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue?vue&type=style&index=0&scoped=421b2cd1&lang.css\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/AboutSection.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-421b2cd1\"]])",
+      "start": 1704747511502,
+      "end": 1704747511506,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/AboutSection.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n  <div>\n    <div class=\"about-sec pt-100 pb-100\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-md-7\">\n            <div class=\"about-desc\">\n              <div class=\"sec-title\">\n                <h1><span>About </span>Grizzpics Treks & Safari's</h1>\n                <p>\n                  At Grizzpicssafari, we are not just a travel company; we are\n                  your gateway to the untamed beauty of Tanzania. With a passion\n                  for wildlife, photography, and sustainable tourism, we curate\n                  exceptional safari experiences that go beyond expectations.\n                  Our team of experienced guides and conservation enthusiasts is\n                  dedicated to sharing the wonders of Tanzania, from the iconic\n                  Serengeti to the hidden treasures of Ngorongoro Crater.\n                </p>\n                <p>\n                  As avid believers in responsible tourism, we strive to leave a\n                  positive impact on both the environment and local communities.\n                  Our safari adventures are crafted to offer a perfect blend of\n                  luxury and authenticity, ensuring you not only witness the\n                  breathtaking landscapes and wildlife but also contribute to\n                  their conservation.\n                </p>\n                <p>\n                  Whether you're a seasoned photographer, a nature enthusiast,\n                  or a family seeking an unforgettable adventure,\n                  Grizzpicssafari welcomes you to embark on a journey where each\n                  moment is a captured memory and every step leaves a footprint\n                  of sustainability. Join us in exploring the wild heart of\n                  Tanzania, where every safari is a story waiting to be told.\n                </p>\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-5\">\n            <div class=\"about-us-img\">\n              <img\n                class=\"w-100 h-100\"\n                src=\"../assets/images/about1.jpg\"\n                alt=\"About-Grizzpics-Treks-&-Safari's\"\n              />\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {};\n</script>\n\n<style scoped>\n.pb-100 {\n  padding-bottom: 100px;\n}\n.pt-100 {\n  padding-top: 100px;\n}\n\n.about-desc {\n  display: inline-block;\n  width: 100%;\n  padding-right: 40px;\n}\n\n.about-sec .sec-title {\n  margin: 0;\n  text-align: left;\n}\n.sec-title {\n  margin: 0 250px 60px;\n  text-align: center;\n}\n\n.sec-title h1 {\n  font-size: 38px;\n  font-weight: bold;\n}\n\n.sec-title h1 span {\n  position: relative;\n  color: #3f230b;\n  /* color: #fab909; */\n}\n\n.sec-title p {\n  margin-bottom: 0;\n  margin-top: 20px;\n}\n\n.about-us-img {\n  position: relative;\n  z-index: 2;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\nimg {\n  vertical-align: middle;\n}\nimg {\n  border: 0;\n}\n\n.about-us-img::before {\n  position: absolute;\n  content: \"\";\n  background: #3f230b;\n  /* background: #fab909; */\n  width: 100%;\n  height: 100%;\n  left: -25px;\n  top: 30px;\n  z-index: -1;\n}\n\n:after,\n:before {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n</style>\n"
+        ],
+        "mappings": ";AAqDA,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC;;;OAZD,UAAiC;;;;EAzCjD;IAAA,gBAAA;;IAAA,eAyCgB,KAAiC,EAAjC,UAAiC"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511506,
+      "end": 1704747511506,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511506,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511506,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511507,
+      "end": 1704747511507,
+      "order": "normal"
+    }
+  ]
+}

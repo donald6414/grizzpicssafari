@@ -1,0 +1,275 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue?vue&type=style&index=0&scoped=8bc5e900&lang.css?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.swiper {\n  width: 100%;\n  height: 100%;\n}\n\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  background: #fff;\n\n  /* Center slide text vertically */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.swiper {\n  width: 100%;\n  height: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.swiper-slide {\n  background-size: cover;\n  background-position: center;\n}\n\n.mySwiper2 {\n  /* height: 80%; */\n  width: 100%;\n}\n\n.mySwiper {\n  height: 20%;\n  box-sizing: border-box;\n  padding: 10px 0;\n}\n\n.mySwiper .swiper-slide {\n  width: 25%;\n  height: 100%;\n  opacity: 0.4;\n}\n\n.mySwiper .swiper-slide-thumb-active {\n  opacity: 1;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n",
+      "start": 1704747511207,
+      "end": 1704747511207
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511207,
+      "end": 1704747511207,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747511207,
+      "end": 1704747511207,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511207,
+      "end": 1704747511207,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747511207,
+      "end": 1704747511207,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747511207,
+      "end": 1704747511207,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".swiper{height:100%}.swiper-slide{align-items:center;background:#fff;display:flex;font-size:18px;justify-content:center;text-align:center}.swiper{height:300px;margin-left:auto;margin-right:auto;width:100%}.swiper-slide{background-position:50%;background-size:cover}.mySwiper2{width:100%}.mySwiper{box-sizing:border-box;height:20%;padding:10px 0}.mySwiper .swiper-slide{height:100%;opacity:.4;width:25%}.mySwiper .swiper-slide-thumb-active{opacity:1}.swiper-slide img{display:block;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1704747511207,
+      "end": 1704747511214,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue",
+        "mappings": "AACA,QAEE,WACF,CAEA,cAQE,kBAAmB,CALnB,eAAgB,CAGhB,YAAa,CAJb,cAAe,CAKf,sBAAuB,CANvB,iBAQF,CAQA,QAEE,YAAa,CACb,gBAAiB,CACjB,iBAAkB,CAHlB,UAIF,CAEA,cAEE,uBAA2B,CAD3B,qBAEF,CAEA,WAEE,UACF,CAEA,UAEE,qBAAsB,CADtB,UAAW,CAEX,cACF,CAEA,wBAEE,WAAY,CACZ,UAAY,CAFZ,SAGF,CAEA,qCACE,SACF,CAEA,kBACE,aAAc,CAEd,WAAY,CACZ,mBAAiB,CAAjB,gBAAiB,CAFjB,UAGF",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue"
+        ],
+        "sourcesContent": [
+          "\n.swiper {\n  width: 100%;\n  height: 100%;\n}\n\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  background: #fff;\n\n  /* Center slide text vertically */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.swiper {\n  width: 100%;\n  height: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.swiper-slide {\n  background-size: cover;\n  background-position: center;\n}\n\n.mySwiper2 {\n  /* height: 80%; */\n  width: 100%;\n}\n\n.mySwiper {\n  height: 20%;\n  box-sizing: border-box;\n  padding: 10px 0;\n}\n\n.mySwiper .swiper-slide {\n  width: 25%;\n  height: 100%;\n  opacity: 0.4;\n}\n\n.mySwiper .swiper-slide-thumb-active {\n  opacity: 1;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747511214,
+      "end": 1704747511214,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747511214,
+      "end": 1704747511214,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747511215,
+      "end": 1704747511215,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".swiper[data-v-8bc5e900]{height:100%}.swiper-slide[data-v-8bc5e900]{align-items:center;background:#fff;display:flex;font-size:18px;justify-content:center;text-align:center}.swiper[data-v-8bc5e900]{height:300px;margin-left:auto;margin-right:auto;width:100%}.swiper-slide[data-v-8bc5e900]{background-position:50%;background-size:cover}.mySwiper2[data-v-8bc5e900]{width:100%}.mySwiper[data-v-8bc5e900]{box-sizing:border-box;height:20%;padding:10px 0}.mySwiper .swiper-slide[data-v-8bc5e900]{height:100%;opacity:.4;width:25%}.mySwiper .swiper-slide-thumb-active[data-v-8bc5e900]{opacity:1}.swiper-slide img[data-v-8bc5e900]{display:block;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1704747511215,
+      "end": 1704747511217,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue",
+        "mappings": "AAAA,yBAAQ,WAAW,CAAC,+BAAc,kBAAkB,CAAC,eAAe,CAAC,YAAY,CAAC,cAAc,CAAC,sBAAsB,CAAC,iBAAiB,CAAC,yBAAQ,YAAY,CAAC,gBAAgB,CAAC,iBAAiB,CAAC,UAAU,CAAC,+BAAc,uBAAuB,CAAC,qBAAqB,CAAC,4BAAW,UAAU,CAAC,2BAAU,qBAAqB,CAAC,UAAU,CAAC,cAAc,CAAC,yCAAwB,WAAW,CAAC,UAAU,CAAC,SAAS,CAAC,sDAAqC,SAAS,CAAC,mCAAkB,aAAa,CAAC,WAAW,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/PackageGallery.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747511217,
+      "end": 1704747511217,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511217,
+      "end": 1704747511217,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511217,
+      "end": 1704747511217,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511217,
+      "end": 1704747511217,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747511217,
+      "end": 1704747511217,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747511217,
+      "end": 1704747511217,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747511224,
+      "end": 1704747511224,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747511232,
+      "end": 1704747511232,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747511234,
+      "end": 1704747511234,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \".swiper[data-v-8bc5e900]{height:100%}.swiper-slide[data-v-8bc5e900]{align-items:center;background:#fff;display:flex;font-size:18px;justify-content:center;text-align:center}.swiper[data-v-8bc5e900]{height:300px;margin-left:auto;margin-right:auto;width:100%}.swiper-slide[data-v-8bc5e900]{background-position:50%;background-size:cover}.mySwiper2[data-v-8bc5e900]{width:100%}.mySwiper[data-v-8bc5e900]{box-sizing:border-box;height:20%;padding:10px 0}.mySwiper .swiper-slide[data-v-8bc5e900]{height:100%;opacity:.4;width:25%}.mySwiper .swiper-slide-thumb-active[data-v-8bc5e900]{opacity:1}.swiper-slide img[data-v-8bc5e900]{display:block;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}\"",
+      "start": 1704747511238,
+      "end": 1704747511240,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747511241,
+      "end": 1704747511241,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747511241,
+      "end": 1704747511241,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747511241,
+      "end": 1704747511241,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747511242,
+      "end": 1704747511242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747511242,
+      "end": 1704747511242,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747511245,
+      "end": 1704747511245,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747511246,
+      "end": 1704747511246,
+      "order": "normal"
+    }
+  ]
+}

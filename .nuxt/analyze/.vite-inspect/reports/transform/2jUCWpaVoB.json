@@ -1,0 +1,223 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"body\">\n    <NavigationComponent />\n    <section class=\"py-5 container\">\n      <header class=\"section-header mb-5 mt-5\"><h1>Contact us</h1></header>\n      <div class=\"card p-4 p-md-5 p-lg-5 mx-auto\">\n        <div class=\"card-body\">\n          <div class=\"form-group\">\n            <label for=\"name\">Name</label>\n            <input\n              type=\"text\"\n              id=\"\"\n              v-model=\"message.name\"\n              class=\"form-control\"\n            />\n            <div\n              v-if=\"errors.name\"\n              v-html=\"errors.name[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"email\">Email</label>\n            <input\n              type=\"email\"\n              id=\"\"\n              v-model=\"message.email\"\n              class=\"form-control\"\n            />\n            <div\n              v-if=\"errors.email\"\n              v-html=\"errors.email[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"phone\">Phone</label>\n            <input\n              type=\"text\"\n              id=\"\"\n              v-model=\"message.phone\"\n              class=\"form-control\"\n            />\n            <div\n              v-if=\"errors.phone\"\n              v-html=\"errors.phone[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group\">\n            <label for=\"message\">Message</label>\n            <textarea class=\"form-control\" v-model=\"message.message\"></textarea>\n            <div\n              v-if=\"errors.message\"\n              v-html=\"errors.message[0]\"\n              style=\"color: red\"\n            />\n          </div>\n          <div class=\"form-group mt-4\">\n            <button class=\"btn btn-brown\" @click=\"contact_message\">\n              <div class=\"spinner-border\" role=\"status\" v-if=\"loading\"></div>\n              <div v-else>Submit</div>\n            </button>\n          </div>\n        </div>\n      </div>\n    </section>\n    <section class=\"mt-4\">\n      <FooterComponent />\n    </section>\n  </div>\n</template>\n\n<script>\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\nexport default {\n  components: {\n    NavigationComponent,\n    FooterComponent,\n  },\n  data: () => ({\n    loading: false,\n    errors: [],\n    message: {\n      name: \"\",\n      email: \"\",\n      phone: \"\",\n      message: \"\",\n    },\n  }),\n  methods: {\n    contact_message() {\n      this.loading = true;\n      axios\n        .post(\n          \"https://api.grizzpicssafari.com/api/\" + \"contact_message\",\n          this.message,\n          {\n            headers: {\n              \"Access-Control-Allow-Origin\": \"*\",\n              \"Access-Control-Allow-Headers\": \"*\",\n              \"Access-Control-Allow-Credentials\": true,\n            },\n          }\n        )\n        .then((response) => {\n          if (response.data[0] == 200) {\n            swal(\n              \"Thank you!\",\n              \"We have received your message, we will reach out to you soon!\",\n              \"success\"\n            );\n            this.loading = false;\n            this.message.name = \"\";\n            this.message.email = \"\";\n            this.message.phone = \"\";\n            this.message.message = \"\";\n          }\n        })\n        .catch((error) => {\n          this.errors = error.response.data.errors;\n          this.loading = false;\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n  },\n};\n</script>\n\n<style scoped>\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n.section-header h1 {\n  font-size: 30px;\n  color: #846644;\n  text-align: center;\n  font-weight: 500;\n  position: relative;\n  padding-bottom: 15px;\n}\n\n.section-header h1:before {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 120px;\n  height: 1px;\n  background: #ddd;\n  bottom: 1px;\n  left: calc(50% - 60px);\n}\n\n.section-header h1:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 40px;\n  height: 3px;\n  background: #3f230b;\n  bottom: 0;\n  left: calc(50% - 20px);\n}\n\n.card {\n  border-radius: 0;\n}\n\n.btn-brown {\n  background: #3f230b;\n  color: #fff;\n}\n.form-control:focus {\n  color: #212529;\n  background-color: #fff;\n  border-color: #3f230b;\n  outline: 0;\n  box-shadow: 0 0 0 0.25rem #846644;\n}\n</style>\n",
+      "start": 1704747507348,
+      "end": 1704747507459,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507459,
+      "end": 1704747507459,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\nconst _sfc_main = {\n  components: {\n    NavigationComponent,\n    FooterComponent,\n  },\n  data: () => ({\n    loading: false,\n    errors: [],\n    message: {\n      name: \"\",\n      email: \"\",\n      phone: \"\",\n      message: \"\",\n    },\n  }),\n  methods: {\n    contact_message() {\n      this.loading = true;\n      axios\n        .post(\n          \"https://api.grizzpicssafari.com/api/\" + \"contact_message\",\n          this.message,\n          {\n            headers: {\n              \"Access-Control-Allow-Origin\": \"*\",\n              \"Access-Control-Allow-Headers\": \"*\",\n              \"Access-Control-Allow-Credentials\": true,\n            },\n          }\n        )\n        .then((response) => {\n          if (response.data[0] == 200) {\n            swal(\n              \"Thank you!\",\n              \"We have received your message, we will reach out to you soon!\",\n              \"success\"\n            );\n            this.loading = false;\n            this.message.name = \"\";\n            this.message.email = \"\";\n            this.message.phone = \"\";\n            this.message.message = \"\";\n          }\n        })\n        .catch((error) => {\n          this.errors = error.response.data.errors;\n          this.loading = false;\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, vModelText as _vModelText, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-1be5ef1d\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"body\" }\nconst _hoisted_2 = { class: \"py-5 container\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"header\", { class: \"section-header mb-5 mt-5\" }, [\n  /*#__PURE__*/_createElementVNode(\"h1\", null, \"Contact us\")\n], -1))\nconst _hoisted_4 = { class: \"card p-4 p-md-5 p-lg-5 mx-auto\" }\nconst _hoisted_5 = { class: \"card-body\" }\nconst _hoisted_6 = { class: \"form-group\" }\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"label\", { for: \"name\" }, \"Name\", -1))\nconst _hoisted_8 = [\"innerHTML\"]\nconst _hoisted_9 = { class: \"form-group\" }\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"label\", { for: \"email\" }, \"Email\", -1))\nconst _hoisted_11 = [\"innerHTML\"]\nconst _hoisted_12 = { class: \"form-group\" }\nconst _hoisted_13 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"label\", { for: \"phone\" }, \"Phone\", -1))\nconst _hoisted_14 = [\"innerHTML\"]\nconst _hoisted_15 = { class: \"form-group\" }\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"label\", { for: \"message\" }, \"Message\", -1))\nconst _hoisted_17 = [\"innerHTML\"]\nconst _hoisted_18 = { class: \"form-group mt-4\" }\nconst _hoisted_19 = {\n  key: 0,\n  class: \"spinner-border\",\n  role: \"status\"\n}\nconst _hoisted_20 = { key: 1 }\nconst _hoisted_21 = { class: \"mt-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NavigationComponent = _resolveComponent(\"NavigationComponent\")\n  const _component_FooterComponent = _resolveComponent(\"FooterComponent\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_NavigationComponent),\n    _createElementVNode(\"section\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _createElementVNode(\"div\", _hoisted_5, [\n          _createElementVNode(\"div\", _hoisted_6, [\n            _hoisted_7,\n            _withDirectives(_createElementVNode(\"input\", {\n              type: \"text\",\n              id: \"\",\n              \"onUpdate:modelValue\": _cache[0] || (_cache[0] = $event => ((_ctx.message.name) = $event)),\n              class: \"form-control\"\n            }, null, 512), [\n              [_vModelText, _ctx.message.name]\n            ]),\n            (_ctx.errors.name)\n              ? (_openBlock(), _createElementBlock(\"div\", {\n                  key: 0,\n                  innerHTML: _ctx.errors.name[0],\n                  style: {\"color\":\"red\"}\n                }, null, 8, _hoisted_8))\n              : _createCommentVNode(\"\", true)\n          ]),\n          _createElementVNode(\"div\", _hoisted_9, [\n            _hoisted_10,\n            _withDirectives(_createElementVNode(\"input\", {\n              type: \"email\",\n              id: \"\",\n              \"onUpdate:modelValue\": _cache[1] || (_cache[1] = $event => ((_ctx.message.email) = $event)),\n              class: \"form-control\"\n            }, null, 512), [\n              [_vModelText, _ctx.message.email]\n            ]),\n            (_ctx.errors.email)\n              ? (_openBlock(), _createElementBlock(\"div\", {\n                  key: 0,\n                  innerHTML: _ctx.errors.email[0],\n                  style: {\"color\":\"red\"}\n                }, null, 8, _hoisted_11))\n              : _createCommentVNode(\"\", true)\n          ]),\n          _createElementVNode(\"div\", _hoisted_12, [\n            _hoisted_13,\n            _withDirectives(_createElementVNode(\"input\", {\n              type: \"text\",\n              id: \"\",\n              \"onUpdate:modelValue\": _cache[2] || (_cache[2] = $event => ((_ctx.message.phone) = $event)),\n              class: \"form-control\"\n            }, null, 512), [\n              [_vModelText, _ctx.message.phone]\n            ]),\n            (_ctx.errors.phone)\n              ? (_openBlock(), _createElementBlock(\"div\", {\n                  key: 0,\n                  innerHTML: _ctx.errors.phone[0],\n                  style: {\"color\":\"red\"}\n                }, null, 8, _hoisted_14))\n              : _createCommentVNode(\"\", true)\n          ]),\n          _createElementVNode(\"div\", _hoisted_15, [\n            _hoisted_16,\n            _withDirectives(_createElementVNode(\"textarea\", {\n              class: \"form-control\",\n              \"onUpdate:modelValue\": _cache[3] || (_cache[3] = $event => ((_ctx.message.message) = $event))\n            }, null, 512), [\n              [_vModelText, _ctx.message.message]\n            ]),\n            (_ctx.errors.message)\n              ? (_openBlock(), _createElementBlock(\"div\", {\n                  key: 0,\n                  innerHTML: _ctx.errors.message[0],\n                  style: {\"color\":\"red\"}\n                }, null, 8, _hoisted_17))\n              : _createCommentVNode(\"\", true)\n          ]),\n          _createElementVNode(\"div\", _hoisted_18, [\n            _createElementVNode(\"button\", {\n              class: \"btn btn-brown\",\n              onClick: _cache[4] || (_cache[4] = (...args) => ($options.contact_message && $options.contact_message(...args)))\n            }, [\n              (_ctx.loading)\n                ? (_openBlock(), _createElementBlock(\"div\", _hoisted_19))\n                : (_openBlock(), _createElementBlock(\"div\", _hoisted_20, \"Submit\"))\n            ])\n          ])\n        ])\n      ])\n    ]),\n    _createElementVNode(\"section\", _hoisted_21, [\n      _createVNode(_component_FooterComponent)\n    ])\n  ]))\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/contacts.vue?vue&type=style&index=0&scoped=1be5ef1d&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-1be5ef1d\"]])",
+      "start": 1704747507459,
+      "end": 1704747507484,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507484,
+      "end": 1704747507484,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507484,
+      "end": 1704747507488,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507488,
+      "end": 1704747507488,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1704747507488,
+      "end": 1704747507489,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507489,
+      "end": 1704747507489,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507489,
+      "end": 1704747507489,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747507489,
+      "end": 1704747507489,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507489,
+      "end": 1704747507489,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747507489,
+      "end": 1704747507489,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507489,
+      "end": 1704747507489,
+      "order": "normal"
+    }
+  ]
+}

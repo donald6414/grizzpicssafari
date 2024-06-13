@@ -1,0 +1,223 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tours.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"body\">\n    <NavigationComponent />\n    <section class=\"py-5 container\">\n      <header class=\"section-header mb-5 mt-5\"><h1>Our Tours</h1></header>\n      <!-- <div class=\"row\" v-if=\"loading\">\n        <div class=\"col-lg-12 col-xs-12\">\n          <div class=\"row col-md-12\">\n            <div class=\"col-md-4\"></div>\n            <div class=\"col-md-8\">\n              <div class=\"row\">\n                <div class=\"col-md-6 col-xs-12 px-2\" v-for=\"i in 6\" :key=\"i\">\n                  <PackagePreloader />\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div> -->\n      <div class=\"text-center mb-3 d-grid\" id=\"filter_button\">\n        <button\n          type=\"button\"\n          class=\"btn btn-primary filter_button\"\n          @click=\"filtersOption\"\n        >\n          Filters\n        </button>\n      </div>\n      <div class=\"row\">\n        <div\n          class=\"col-lg-3 col-xs-12 wrapper filters filters-active-mobile\"\n          id=\"filters\"\n        >\n          <div class=\"row fileterMobileHeader\">\n            <div class=\"col-md-6 mobile_filter_header\">\n              <span class=\"float-left\" style=\"color: #3f230b\">\n                Filters Option\n              </span>\n              <span\n                class=\"float-right fa fa-times\"\n                @click=\"cancelFiltersOption\"\n                data-dismiss=\"filters\"\n                style=\"right: 0; color: #3f230b\"\n              ></span>\n            </div>\n          </div>\n          <div class=\"filterContents\">\n            <div class=\"card quote_card\">\n              <div class=\"card-title title mt-3\">\n                <strong>\n                  <h1 class=\"our-color\">Tour Levels</h1>\n                </strong>\n              </div>\n              <div class=\"card-body\">\n                <template v-if=\"filter_loading\">\n                  <div>\n                    <SpinnerComponent />\n                  </div>\n                </template>\n                <template v-else>\n                  <div\n                    class=\"form-check ms-2 mt-1\"\n                    v-for=\"(tour_level, index) in tour_levels\"\n                    :key=\"tour_level.id\"\n                  >\n                    <input\n                      @change=\"tour_level_changed(tour_level)\"\n                      :id=\"'tour_level' + index\"\n                      type=\"checkbox\"\n                      class=\"form-check-input\"\n                    />\n                    <label :for=\"'tour_level' + index\" class=\"form-check-label\">\n                      {{ tour_level.title }}\n                    </label>\n                  </div>\n                </template>\n              </div>\n            </div>\n\n            <div class=\"card quote_card mt-3\">\n              <div class=\"card-title title mt-3\">\n                <strong>\n                  <h1 class=\"our-color\">Tour Focus</h1>\n                </strong>\n              </div>\n              <div class=\"card-body\">\n                <template v-if=\"filter_loading\">\n                  <div>\n                    <SpinnerComponent />\n                  </div>\n                </template>\n                <template v-else>\n                  <div\n                    class=\"form-check ms-2 mt-1\"\n                    v-for=\"(tour_focus, index) in tour_foci\"\n                    :key=\"tour_focus.id\"\n                  >\n                    <input\n                      @change=\"tour_focus_changed(tour_focus)\"\n                      :id=\"'tour_focus' + index\"\n                      type=\"checkbox\"\n                      class=\"form-check-input\"\n                    />\n                    <label :for=\"'tour_focus' + index\" class=\"form-check-label\">\n                      {{ tour_focus.title }}\n                    </label>\n                  </div>\n                </template>\n              </div>\n            </div>\n            <div class=\"card quote_card mt-3\">\n              <div class=\"card-title title mt-3\">\n                <strong>\n                  <h1 class=\"our-color\">Tour Activities</h1>\n                </strong>\n              </div>\n              <div class=\"card-body\">\n                <template v-if=\"filter_loading\">\n                  <div>\n                    <SpinnerComponent />\n                  </div>\n                </template>\n                <template v-else>\n                  <div\n                    class=\"form-check ms-2 mt-1\"\n                    v-for=\"(tour_activity, index) in tour_activities\"\n                    :key=\"tour_activity.id\"\n                  >\n                    <input\n                      @change=\"tour_activity_changed(tour_activity)\"\n                      :id=\"'tour_activity' + index\"\n                      type=\"checkbox\"\n                      class=\"form-check-input\"\n                    />\n                    <label\n                      :for=\"'tour_activity' + index\"\n                      class=\"form-check-label\"\n                    >\n                      {{ tour_activity.title }}\n                    </label>\n                  </div>\n                </template>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!-- <div class=\"col-lg-9 col-xs-12\">\n          <div class=\"row gx-0\">\n            <div class=\"col-md-6 col-xs-12 px-2\">\n              <TourCard />\n            </div>\n            <div class=\"col-md-6 col-xs-12 px-2\">\n              <TourCard />\n            </div>\n          </div>\n        </div> -->\n        <div class=\"col-lg-9 col-xs-12\">\n          <div class=\"row\">\n            <template v-if=\"loading\">\n              <div class=\"col-md-6 col-xs-12 px-2\" v-for=\"i in 6\" :key=\"i\">\n                <PackagePreloader />\n              </div>\n            </template>\n            <template v-else>\n              <div\n                class=\"col-md-6 col-xs-12 px-2\"\n                v-for=\"tour in tour_packages.data\"\n                :key=\"tour.id\"\n              >\n                <TourCard :tour_package=\"tour\" />\n              </div>\n            </template>\n          </div>\n          <div class=\"text-center py-4\">\n            <!-- <pagination\n              align=\"center\"\n              :data=\"tour_packages\"\n              @pagination-change-page=\"get_packages\"\n              :pageLinkClass=\"'page-item'\"\n            ></pagination> -->\n            <button\n              class=\"btn btn-brown\"\n              @click=\"previousPage\"\n              :disabled=\"tour_packages.current_page === 1\"\n            >\n              Previous\n            </button>\n            <span class=\"px-4\">\n              <strong>\n                {{ tour_packages.current_page }}\n              </strong>\n            </span>\n            <button\n              class=\"btn btn-brown\"\n              @click=\"nextPage\"\n              :disabled=\"tour_packages.current_page === tour_packages.last_page\"\n            >\n              Next\n            </button>\n          </div>\n        </div>\n      </div>\n    </section>\n    <section class=\"mt-4\">\n      <FooterComponent />\n    </section>\n    <!-- Mobile view filters -->\n    <!-- <section id=\"filters\">\n      <div class=\"wrapper\">\n        <div class=\"filter_close\">Filter Option</div>\n      </div>\n    </section> -->\n  </div>\n</template>\n\n<script>\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport TourCard from \"../components/TourCard.vue\";\nimport PackagePreloader from \"../components/preloaders/PackagePreloader.vue\";\nimport SpinnerComponent from \"../components/preloaders/SpinnerComponent.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\n// import pagination from \"laravel-vue-pagination\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\nexport default {\n  components: {\n    NavigationComponent,\n    TourCard,\n    PackagePreloader,\n    // pagination,\n    FooterComponent,\n    SpinnerComponent,\n  },\n  data: () => ({\n    filter_loading: true,\n    loading: true,\n    tour_packages: [],\n    filters: {\n      activities: [],\n      level: [],\n      foci: [],\n    },\n    tour_levels: [],\n    tour_foci: [],\n    tour_activities: [],\n  }),\n  methods: {\n    get_packages(page = 1) {\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/\" + \"packages?page=\" + page)\n        .then((response) => {\n          this.tour_packages = response.data;\n          this.loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n    get_filter_info() {\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/get_filter_info\")\n        .then((response) => {\n          this.tour_levels = response.data[0];\n          this.tour_foci = response.data[1];\n          this.tour_activities = response.data[2];\n          this.filter_loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n    tour_level_changed(level) {\n      if (this.filters.level.includes(level.id)) {\n        let removed_level = this.filters.level.indexOf(level.id);\n        this.filters.level.splice(removed_level, 1);\n      } else {\n        this.filters.level.push(level.id);\n      }\n      this.filter_packages();\n    },\n    tour_focus_changed(focus) {\n      if (this.filters.foci.includes(focus.id)) {\n        let removed_focus = this.filters.foci.indexOf(focus.id);\n        this.filters.foci.splice(removed_focus, 1);\n      } else {\n        this.filters.foci.push(focus.id);\n      }\n      this.filter_packages();\n    },\n    tour_activity_changed(activity) {\n      if (this.filters.activities.includes(activity.id)) {\n        let removed_activity = this.filters.activities.indexOf(focus.id);\n        this.filters.activities.splice(removed_activity, 1);\n      } else {\n        this.filters.activities.push(activity.id);\n      }\n      this.filter_packages();\n    },\n    filter_packages() {\n      this.loading = true;\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/filter_packages\", {\n          params: this.filters,\n        })\n        .then((response) => {\n          this.tour_packages = response.data;\n          this.loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n    previousPage() {\n      this.loading = true;\n      this.get_packages(this.tour_packages.current_page - 1);\n      // this.$emit(\"page-change\", this.currentPage - 1);\n    },\n    nextPage() {\n      this.loading = true;\n      this.get_packages(this.tour_packages.current_page + 1);\n      // this.$emit(\"page-change\", this.currentPage + 1);\n    },\n    filtersOption() {\n      var filterOption = document.getElementById(\"filters\");\n      if (!filterOption.classList.contains(\"mobile_view\")) {\n        filterOption.classList.add(\"mobile_view\");\n      } else {\n        // filterOption.style.display = \"none\";\n        filterOption.classList.remove(\"mobile_view\");\n      }\n    },\n    cancelFiltersOption() {\n      var filterOption = document.getElementById(\"filters\");\n      if (filterOption.classList.contains(\"mobile_view\")) {\n        filterOption.classList.remove(\"mobile_view\");\n      }\n    },\n  },\n  created() {\n    this.get_filter_info();\n    this.get_packages();\n  },\n};\n</script>\n\n<style scoped>\n.body {\n  font-family: \"Gentium Basic\", serif;\n}\n.section-header h1 {\n  font-size: 30px;\n  color: #846644;\n  text-align: center;\n  font-weight: 500;\n  position: relative;\n  padding-bottom: 15px;\n}\n\n.section-header h1:before {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 120px;\n  height: 1px;\n  background: #ddd;\n  bottom: 1px;\n  left: calc(50% - 60px);\n}\n\n.section-header h1:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 40px;\n  height: 3px;\n  background: #3f230b;\n  bottom: 0;\n  left: calc(50% - 20px);\n}\n.title {\n  /* margin-left: -1.25rem;\n  margin-right: -1.25rem; */\n  padding: 0 1.25rem 0.9375rem;\n  border-bottom: 0.0625rem solid #d9d9d9;\n  position: relative;\n}\n\n.title strong {\n  padding-top: 0.25rem;\n  margin-bottom: 0.5rem;\n  font-size: 1.125rem;\n  line-height: 1.5rem;\n}\n.title strong h1 {\n  line-height: 2rem;\n  font-size: 1.75rem;\n  font-weight: 600;\n  letter-spacing: 0.03125rem;\n}\n.card {\n  border-radius: 0;\n}\n\n.btn-brown {\n  background: #3f230b;\n  color: #fff;\n}\n\n.form-check {\n  margin-bottom: 0;\n  min-height: auto;\n}\n\n.form-check-input {\n  position: relative;\n  width: 1.125rem;\n  height: 1.125rem;\n  background-color: #fff;\n  border: 0.125rem solid #3f230b;\n}\n\n.form-check-input {\n  width: 1em;\n  height: 1em;\n  margin-top: 0.3em;\n  vertical-align: top;\n  background-repeat: no-repeat;\n  background-position: 50%;\n  background-size: contain;\n  border: 1px solid #3f230b;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  /* -webkit-print-color-adjust: exact; */\n  /* color-adjust: exact; */\n  transition: background-color 0.15s ease-in-out,\n    background-position 0.15s ease-in-out, border-color 0.15s ease-in-out,\n    box-shadow 0.15s ease-in-out;\n}\n\n.form-check-input[type=\"checkbox\"]:checked {\n  background-color: #3f230b;\n}\n.form-check-input[type=\"checkbox\"]:focus {\n  border-color: #3f230b;\n}\n\n.form-check-input[type=\"checkbox\"] {\n  border-radius: 0.125rem;\n}\n.form-check .form-check-input {\n  margin-left: -1.79rem;\n}\n.form-check-input[type=\"checkbox\"] {\n  border-radius: 0.25em;\n}\n.form-check .form-check-input {\n  float: left;\n  margin-left: -1.5em;\n}\n.filter_button {\n  display: none;\n}\n.fileterMobileHeader {\n  display: none;\n}\n@media screen and (max-device-width: 640px) {\n  .filters {\n    display: none;\n  }\n\n  .filter_button {\n    display: block;\n  }\n\n  .filterContents {\n    margin-top: 40px;\n    padding-top: 15px;\n    padding-bottom: 15px;\n  }\n  .card {\n    border: 0px;\n  }\n  .title {\n    border-bottom: 0px;\n    padding-left: 0px;\n    padding-right: 0px;\n  }\n\n  /* #filters {\n    display: none;\n  } */\n  .mobile_view {\n    display: block;\n    background-color: #fff;\n    position: fixed;\n    height: 100%;\n    width: 100%;\n  }\n\n  .filter_close {\n    background-color: #e2e1e1;\n    padding: 0.625rem 1.25rem;\n    position: absolute;\n    width: 100%;\n    top: 0 !important;\n    left: 0;\n    box-sizing: border-box;\n    font-size: 1.25rem;\n    z-index: 200;\n    box-shadow: 0px px 2px rgba(0, 0, 0, 0.18);\n  }\n\n  .filters-active-mobile {\n    background: rgb(255, 255, 255);\n    position: fixed;\n    height: 100%;\n    width: 100%;\n    z-index: 10000;\n    overflow: scroll;\n    top: 0px;\n    margin-top: 0px;\n  }\n  .wrapper {\n    width: 100vw;\n    height: 100vh;\n  }\n  .fileterMobileHeader {\n    top: 0;\n    width: 100%;\n    position: absolute;\n    display: block;\n    background-color: #ddd;\n    box-shadow: 3px 3px 6px black;\n  }\n  .mobile_filter_header {\n    font-size: 25px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n  }\n}\n\n.btn-primary {\n  --bs-btn-color: #fff;\n  --bs-btn-bg: #3f230b;\n  --bs-btn-border-color: #3f230b;\n  --bs-btn-hover-color: #fff;\n  --bs-btn-hover-bg: #846644;\n  --bs-btn-hover-border-color: #846644;\n  --bs-btn-focus-shadow-rgb: 49, 132, 253;\n  --bs-btn-active-color: #fff;\n  --bs-btn-active-bg: #846644;\n  --bs-btn-active-border-color: #846644;\n  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n  --bs-btn-disabled-color: #fff;\n  --bs-btn-disabled-bg: #3f230b;\n  --bs-btn-disabled-border-color: #3f230b;\n}\n.btn:hover {\n  color: var(--bs-btn-hover-color);\n  background-color: #3f230b;\n  border-color: #3f230b;\n}\n.our-color {\n  color: #3f230b;\n}\n/* .wrapper {\n  width: 100%;\n  height: 100vh;\n} */\n/* .mobile_filter_header {\n  display: none;\n} */\n</style>\n",
+      "start": 1704747507351,
+      "end": 1704747507565,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747507565,
+      "end": 1704747507565,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nimport NavigationComponent from \"../components/NavigationComponent.vue\";\nimport TourCard from \"../components/TourCard.vue\";\nimport PackagePreloader from \"../components/preloaders/PackagePreloader.vue\";\nimport SpinnerComponent from \"../components/preloaders/SpinnerComponent.vue\";\nimport FooterComponent from \"../components/FooterComponent.vue\";\n// import pagination from \"laravel-vue-pagination\";\nimport axios from \"axios\";\nimport swal from \"sweetalert\";\nconst _sfc_main = {\n  components: {\n    NavigationComponent,\n    TourCard,\n    PackagePreloader,\n    // pagination,\n    FooterComponent,\n    SpinnerComponent,\n  },\n  data: () => ({\n    filter_loading: true,\n    loading: true,\n    tour_packages: [],\n    filters: {\n      activities: [],\n      level: [],\n      foci: [],\n    },\n    tour_levels: [],\n    tour_foci: [],\n    tour_activities: [],\n  }),\n  methods: {\n    get_packages(page = 1) {\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/\" + \"packages?page=\" + page)\n        .then((response) => {\n          this.tour_packages = response.data;\n          this.loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n    get_filter_info() {\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/get_filter_info\")\n        .then((response) => {\n          this.tour_levels = response.data[0];\n          this.tour_foci = response.data[1];\n          this.tour_activities = response.data[2];\n          this.filter_loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n    tour_level_changed(level) {\n      if (this.filters.level.includes(level.id)) {\n        let removed_level = this.filters.level.indexOf(level.id);\n        this.filters.level.splice(removed_level, 1);\n      } else {\n        this.filters.level.push(level.id);\n      }\n      this.filter_packages();\n    },\n    tour_focus_changed(focus) {\n      if (this.filters.foci.includes(focus.id)) {\n        let removed_focus = this.filters.foci.indexOf(focus.id);\n        this.filters.foci.splice(removed_focus, 1);\n      } else {\n        this.filters.foci.push(focus.id);\n      }\n      this.filter_packages();\n    },\n    tour_activity_changed(activity) {\n      if (this.filters.activities.includes(activity.id)) {\n        let removed_activity = this.filters.activities.indexOf(focus.id);\n        this.filters.activities.splice(removed_activity, 1);\n      } else {\n        this.filters.activities.push(activity.id);\n      }\n      this.filter_packages();\n    },\n    filter_packages() {\n      this.loading = true;\n      axios\n        .get(\"https://api.grizzpicssafari.com/api/filter_packages\", {\n          params: this.filters,\n        })\n        .then((response) => {\n          this.tour_packages = response.data;\n          this.loading = false;\n        })\n        .catch((error) => {\n          swal(\"Oops...!\", \"Something went wrong, please try again!\", \"error\");\n          return error;\n        });\n    },\n    previousPage() {\n      this.loading = true;\n      this.get_packages(this.tour_packages.current_page - 1);\n      // this.$emit(\"page-change\", this.currentPage - 1);\n    },\n    nextPage() {\n      this.loading = true;\n      this.get_packages(this.tour_packages.current_page + 1);\n      // this.$emit(\"page-change\", this.currentPage + 1);\n    },\n    filtersOption() {\n      var filterOption = document.getElementById(\"filters\");\n      if (!filterOption.classList.contains(\"mobile_view\")) {\n        filterOption.classList.add(\"mobile_view\");\n      } else {\n        // filterOption.style.display = \"none\";\n        filterOption.classList.remove(\"mobile_view\");\n      }\n    },\n    cancelFiltersOption() {\n      var filterOption = document.getElementById(\"filters\");\n      if (filterOption.classList.contains(\"mobile_view\")) {\n        filterOption.classList.remove(\"mobile_view\");\n      }\n    },\n  },\n  created() {\n    this.get_filter_info();\n    this.get_packages();\n  },\n};\n\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-20f45195\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"body\" }\nconst _hoisted_2 = { class: \"py-5 container\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"header\", { class: \"section-header mb-5 mt-5\" }, [\n  /*#__PURE__*/_createElementVNode(\"h1\", null, \"Our Tours\")\n], -1))\nconst _hoisted_4 = {\n  class: \"text-center mb-3 d-grid\",\n  id: \"filter_button\"\n}\nconst _hoisted_5 = { class: \"row\" }\nconst _hoisted_6 = {\n  class: \"col-lg-3 col-xs-12 wrapper filters filters-active-mobile\",\n  id: \"filters\"\n}\nconst _hoisted_7 = { class: \"row fileterMobileHeader\" }\nconst _hoisted_8 = { class: \"col-md-6 mobile_filter_header\" }\nconst _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", {\n  class: \"float-left\",\n  style: {\"color\":\"#3f230b\"}\n}, \" Filters Option \", -1))\nconst _hoisted_10 = { class: \"filterContents\" }\nconst _hoisted_11 = { class: \"card quote_card\" }\nconst _hoisted_12 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"card-title title mt-3\" }, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, [\n    /*#__PURE__*/_createElementVNode(\"h1\", { class: \"our-color\" }, \"Tour Levels\")\n  ])\n], -1))\nconst _hoisted_13 = { class: \"card-body\" }\nconst _hoisted_14 = { key: 0 }\nconst _hoisted_15 = [\"onChange\", \"id\"]\nconst _hoisted_16 = [\"for\"]\nconst _hoisted_17 = { class: \"card quote_card mt-3\" }\nconst _hoisted_18 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"card-title title mt-3\" }, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, [\n    /*#__PURE__*/_createElementVNode(\"h1\", { class: \"our-color\" }, \"Tour Focus\")\n  ])\n], -1))\nconst _hoisted_19 = { class: \"card-body\" }\nconst _hoisted_20 = { key: 0 }\nconst _hoisted_21 = [\"onChange\", \"id\"]\nconst _hoisted_22 = [\"for\"]\nconst _hoisted_23 = { class: \"card quote_card mt-3\" }\nconst _hoisted_24 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"card-title title mt-3\" }, [\n  /*#__PURE__*/_createElementVNode(\"strong\", null, [\n    /*#__PURE__*/_createElementVNode(\"h1\", { class: \"our-color\" }, \"Tour Activities\")\n  ])\n], -1))\nconst _hoisted_25 = { class: \"card-body\" }\nconst _hoisted_26 = { key: 0 }\nconst _hoisted_27 = [\"onChange\", \"id\"]\nconst _hoisted_28 = [\"for\"]\nconst _hoisted_29 = { class: \"col-lg-9 col-xs-12\" }\nconst _hoisted_30 = { class: \"row\" }\nconst _hoisted_31 = { class: \"text-center py-4\" }\nconst _hoisted_32 = [\"disabled\"]\nconst _hoisted_33 = { class: \"px-4\" }\nconst _hoisted_34 = [\"disabled\"]\nconst _hoisted_35 = { class: \"mt-4\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_NavigationComponent = _resolveComponent(\"NavigationComponent\")\n  const _component_SpinnerComponent = _resolveComponent(\"SpinnerComponent\")\n  const _component_PackagePreloader = _resolveComponent(\"PackagePreloader\")\n  const _component_TourCard = _resolveComponent(\"TourCard\")\n  const _component_FooterComponent = _resolveComponent(\"FooterComponent\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_NavigationComponent),\n    _createElementVNode(\"section\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _createElementVNode(\"button\", {\n          type: \"button\",\n          class: \"btn btn-primary filter_button\",\n          onClick: _cache[0] || (_cache[0] = (...args) => ($options.filtersOption && $options.filtersOption(...args)))\n        }, \" Filters \")\n      ]),\n      _createElementVNode(\"div\", _hoisted_5, [\n        _createElementVNode(\"div\", _hoisted_6, [\n          _createElementVNode(\"div\", _hoisted_7, [\n            _createElementVNode(\"div\", _hoisted_8, [\n              _hoisted_9,\n              _createElementVNode(\"span\", {\n                class: \"float-right fa fa-times\",\n                onClick: _cache[1] || (_cache[1] = (...args) => ($options.cancelFiltersOption && $options.cancelFiltersOption(...args))),\n                \"data-dismiss\": \"filters\",\n                style: {\"right\":\"0\",\"color\":\"#3f230b\"}\n              })\n            ])\n          ]),\n          _createElementVNode(\"div\", _hoisted_10, [\n            _createElementVNode(\"div\", _hoisted_11, [\n              _hoisted_12,\n              _createElementVNode(\"div\", _hoisted_13, [\n                (_ctx.filter_loading)\n                  ? (_openBlock(), _createElementBlock(\"div\", _hoisted_14, [\n                      _createVNode(_component_SpinnerComponent)\n                    ]))\n                  : (_openBlock(true), _createElementBlock(_Fragment, { key: 1 }, _renderList(_ctx.tour_levels, (tour_level, index) => {\n                      return (_openBlock(), _createElementBlock(\"div\", {\n                        class: \"form-check ms-2 mt-1\",\n                        key: tour_level.id\n                      }, [\n                        _createElementVNode(\"input\", {\n                          onChange: $event => ($options.tour_level_changed(tour_level)),\n                          id: 'tour_level' + index,\n                          type: \"checkbox\",\n                          class: \"form-check-input\"\n                        }, null, 40, _hoisted_15),\n                        _createElementVNode(\"label\", {\n                          for: 'tour_level' + index,\n                          class: \"form-check-label\"\n                        }, _toDisplayString(tour_level.title), 9, _hoisted_16)\n                      ]))\n                    }), 128))\n              ])\n            ]),\n            _createElementVNode(\"div\", _hoisted_17, [\n              _hoisted_18,\n              _createElementVNode(\"div\", _hoisted_19, [\n                (_ctx.filter_loading)\n                  ? (_openBlock(), _createElementBlock(\"div\", _hoisted_20, [\n                      _createVNode(_component_SpinnerComponent)\n                    ]))\n                  : (_openBlock(true), _createElementBlock(_Fragment, { key: 1 }, _renderList(_ctx.tour_foci, (tour_focus, index) => {\n                      return (_openBlock(), _createElementBlock(\"div\", {\n                        class: \"form-check ms-2 mt-1\",\n                        key: tour_focus.id\n                      }, [\n                        _createElementVNode(\"input\", {\n                          onChange: $event => ($options.tour_focus_changed(tour_focus)),\n                          id: 'tour_focus' + index,\n                          type: \"checkbox\",\n                          class: \"form-check-input\"\n                        }, null, 40, _hoisted_21),\n                        _createElementVNode(\"label\", {\n                          for: 'tour_focus' + index,\n                          class: \"form-check-label\"\n                        }, _toDisplayString(tour_focus.title), 9, _hoisted_22)\n                      ]))\n                    }), 128))\n              ])\n            ]),\n            _createElementVNode(\"div\", _hoisted_23, [\n              _hoisted_24,\n              _createElementVNode(\"div\", _hoisted_25, [\n                (_ctx.filter_loading)\n                  ? (_openBlock(), _createElementBlock(\"div\", _hoisted_26, [\n                      _createVNode(_component_SpinnerComponent)\n                    ]))\n                  : (_openBlock(true), _createElementBlock(_Fragment, { key: 1 }, _renderList(_ctx.tour_activities, (tour_activity, index) => {\n                      return (_openBlock(), _createElementBlock(\"div\", {\n                        class: \"form-check ms-2 mt-1\",\n                        key: tour_activity.id\n                      }, [\n                        _createElementVNode(\"input\", {\n                          onChange: $event => ($options.tour_activity_changed(tour_activity)),\n                          id: 'tour_activity' + index,\n                          type: \"checkbox\",\n                          class: \"form-check-input\"\n                        }, null, 40, _hoisted_27),\n                        _createElementVNode(\"label\", {\n                          for: 'tour_activity' + index,\n                          class: \"form-check-label\"\n                        }, _toDisplayString(tour_activity.title), 9, _hoisted_28)\n                      ]))\n                    }), 128))\n              ])\n            ])\n          ])\n        ]),\n        _createElementVNode(\"div\", _hoisted_29, [\n          _createElementVNode(\"div\", _hoisted_30, [\n            (_ctx.loading)\n              ? (_openBlock(), _createElementBlock(_Fragment, { key: 0 }, _renderList(6, (i) => {\n                  return _createElementVNode(\"div\", {\n                    class: \"col-md-6 col-xs-12 px-2\",\n                    key: i\n                  }, [\n                    _createVNode(_component_PackagePreloader)\n                  ])\n                }), 64))\n              : (_openBlock(true), _createElementBlock(_Fragment, { key: 1 }, _renderList(_ctx.tour_packages.data, (tour) => {\n                  return (_openBlock(), _createElementBlock(\"div\", {\n                    class: \"col-md-6 col-xs-12 px-2\",\n                    key: tour.id\n                  }, [\n                    _createVNode(_component_TourCard, { tour_package: tour }, null, 8, [\"tour_package\"])\n                  ]))\n                }), 128))\n          ]),\n          _createElementVNode(\"div\", _hoisted_31, [\n            _createElementVNode(\"button\", {\n              class: \"btn btn-brown\",\n              onClick: _cache[2] || (_cache[2] = (...args) => ($options.previousPage && $options.previousPage(...args))),\n              disabled: _ctx.tour_packages.current_page === 1\n            }, \" Previous \", 8, _hoisted_32),\n            _createElementVNode(\"span\", _hoisted_33, [\n              _createElementVNode(\"strong\", null, _toDisplayString(_ctx.tour_packages.current_page), 1)\n            ]),\n            _createElementVNode(\"button\", {\n              class: \"btn btn-brown\",\n              onClick: _cache[3] || (_cache[3] = (...args) => ($options.nextPage && $options.nextPage(...args))),\n              disabled: _ctx.tour_packages.current_page === _ctx.tour_packages.last_page\n            }, \" Next \", 8, _hoisted_34)\n          ])\n        ])\n      ])\n    ]),\n    _createElementVNode(\"section\", _hoisted_35, [\n      _createVNode(_component_FooterComponent)\n    ])\n  ]))\n}\n\nimport \"/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/pages/tours.vue?vue&type=style&index=0&scoped=20f45195&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-20f45195\"]])",
+      "start": 1704747507565,
+      "end": 1704747507579,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747507579,
+      "end": 1704747507579,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747507579,
+      "end": 1704747507587,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747507587,
+      "end": 1704747507587,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1704747507587,
+      "end": 1704747507588,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;AAAA"
+      }
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747507588,
+      "end": 1704747507588,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747507588,
+      "end": 1704747507588,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747507588,
+      "end": 1704747507588,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747507588,
+      "end": 1704747507588,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747507588,
+      "end": 1704747507588,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747507588,
+      "end": 1704747507588,
+      "order": "normal"
+    }
+  ]
+}

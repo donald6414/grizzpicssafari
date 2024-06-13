@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/Users/donald/Desktop/Projects/tourism/tanzania_by_night_website/components/preloaders/PackagePreloader.vue?vue&type=style&index=0&scoped=1a38310e&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.tour-card {\n  max-width: 450px;\n  margin-right: auto;\n  margin-left: auto;\n  margin-bottom: 2.5rem;\n  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease-in-out;\n  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  text-decoration: none;\n  color: #000;\n  background-color: #fff !important;\n}\n\n.tour-card .bg-image {\n  background-size: cover;\n  position: relative;\n  width: 100%;\n  height: 250px;\n}\n.card .bg-image {\n  border-top-left-radius: 0.25rem;\n  border-top-right-radius: 0.25rem;\n}\n.bg-image {\n  position: relative;\n  overflow: hidden;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: 50%;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n.bg-image img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n  object-fit: cover;\n  z-index: 1;\n}\n\n.tour-card .tour_title {\n  width: 100%;\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  text-align: left;\n  padding: 12px 10px;\n  background: rgba(0, 0, 0, 0.4);\n  background: linear-gradient(\n    180deg,\n    transparent 0,\n    rgba(0, 0, 0, 0.3) 45%,\n    rgba(0, 0, 0, 0.5)\n  );\n  text-shadow: 1px 1px 5px #000;\n  color: #fff;\n  font-weight: 700;\n  font-size: 1.625rem;\n  line-height: 1.875rem;\n  margin: 40px 0 0;\n}\n\n.tour-card:hover {\n  cursor: pointer;\n  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.6);\n  transition-duration: 0.25s;\n}\n\n.trip-route {\n  min-height: 63px;\n}\n.title {\n  height: 30px;\n  width: 80%;\n  background-color: grey;\n}\n.title2 {\n  height: 30px;\n  width: 40%;\n  background-color: grey;\n}\n\n.price {\n  height: 20px;\n  width: 30%;\n  background-color: grey;\n}\n.country {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n\n.start_end {\n  height: 20px;\n  width: 50%;\n  background-color: grey;\n}\n\n.tour_type {\n  height: 20px;\n  width: 45%;\n  background-color: grey;\n}\n\n.destination {\n  height: 20px;\n  width: 40%;\n  background-color: grey;\n}\n",
+      "start": 1704747508197,
+      "end": 1704747508197
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1704747508197,
+      "end": 1704747508197,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1704747508197,
+      "end": 1704747508197,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1704747508197,
+      "end": 1704747508197,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".tour-card{background-color:#fff!important;box-shadow:0 2px 3px rgba(0,0,0,.18);color:#000;cursor:pointer;margin-bottom:2.5rem;margin-left:auto;margin-right:auto;max-width:450px;text-decoration:none;transition:box-shadow .2s ease-in-out,transform .3s ease-in-out;-webkit-user-select:none;-moz-user-select:none;user-select:none}.tour-card .bg-image{background-size:cover;height:250px;position:relative;width:100%}.card .bg-image{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.bg-image{background-position:50%;background-repeat:no-repeat;background-size:cover;overflow:hidden;position:relative}.bg-image,.bg-image img{height:100%;-o-object-fit:cover;object-fit:cover;width:100%;z-index:1}.tour-card .tour_title{background:rgba(0,0,0,.4);background:linear-gradient(180deg,transparent,rgba(0,0,0,.3) 45%,rgba(0,0,0,.5));bottom:0;color:#fff;font-size:1.625rem;font-weight:700;left:0;line-height:1.875rem;margin:40px 0 0;padding:12px 10px;position:absolute;right:0;text-align:left;text-shadow:1px 1px 5px #000;width:100%}.tour-card:hover{box-shadow:0 1px 13px rgba(0,0,0,.6);cursor:pointer;transition-duration:.25s}.trip-route{min-height:63px}.title{width:80%}.title,.title2{background-color:grey;height:30px}.title2{width:40%}.price{width:30%}.country,.price{background-color:grey;height:20px}.country{width:40%}.start_end{width:50%}.start_end,.tour_type{background-color:grey;height:20px}.tour_type{width:45%}.destination{background-color:grey;height:20px;width:40%}",
+      "start": 1704747508197,
+      "end": 1704747508210,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1704747508210,
+      "end": 1704747508210,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1704747508210,
+      "end": 1704747508210,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1704747508210,
+      "end": 1704747508210,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".tour-card[data-v-1a38310e]{background-color:#fff!important;box-shadow:0 2px 3px rgba(0,0,0,.18);color:#000;cursor:pointer;margin-bottom:2.5rem;margin-left:auto;margin-right:auto;max-width:450px;text-decoration:none;transition:box-shadow .2s ease-in-out,transform .3s ease-in-out;-webkit-user-select:none;-moz-user-select:none;user-select:none}.tour-card .bg-image[data-v-1a38310e]{background-size:cover;height:250px;position:relative;width:100%}.card .bg-image[data-v-1a38310e]{border-top-left-radius:.25rem;border-top-right-radius:.25rem}.bg-image[data-v-1a38310e]{background-position:50%;background-repeat:no-repeat;background-size:cover;overflow:hidden;position:relative}.bg-image[data-v-1a38310e],.bg-image img[data-v-1a38310e]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%;z-index:1}.tour-card .tour_title[data-v-1a38310e]{background:rgba(0,0,0,.4);background:linear-gradient(180deg,transparent,rgba(0,0,0,.3) 45%,rgba(0,0,0,.5));bottom:0;color:#fff;font-size:1.625rem;font-weight:700;left:0;line-height:1.875rem;margin:40px 0 0;padding:12px 10px;position:absolute;right:0;text-align:left;text-shadow:1px 1px 5px #000;width:100%}.tour-card[data-v-1a38310e]:hover{box-shadow:0 1px 13px rgba(0,0,0,.6);cursor:pointer;transition-duration:.25s}.trip-route[data-v-1a38310e]{min-height:63px}.title[data-v-1a38310e]{width:80%}.title[data-v-1a38310e],.title2[data-v-1a38310e]{background-color:grey;height:30px}.title2[data-v-1a38310e]{width:40%}.price[data-v-1a38310e]{width:30%}.country[data-v-1a38310e],.price[data-v-1a38310e]{background-color:grey;height:20px}.country[data-v-1a38310e]{width:40%}.start_end[data-v-1a38310e]{width:50%}.start_end[data-v-1a38310e],.tour_type[data-v-1a38310e]{background-color:grey;height:20px}.tour_type[data-v-1a38310e]{width:45%}.destination[data-v-1a38310e]{background-color:grey;height:20px;width:40%}",
+      "start": 1704747508210,
+      "end": 1704747508212,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1704747508212,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1704747508213,
+      "end": 1704747508213,
+      "order": "normal"
+    }
+  ]
+}
